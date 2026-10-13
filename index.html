@@ -309,7 +309,7 @@
       margin-top: 4px;
     }
 
-    /* Live Telemetry Section with Regional Filter Functionality */
+    /* Live Telemetry Section with Secure PIN Lookup */
     .telemetry-section {
       padding: 70px 5%;
       background: #040912;
@@ -410,9 +410,7 @@
       transition: opacity 0.3s ease, transform 0.3s ease;
     }
 
-    .ticket-card.hidden {
-      display: none;
-    }
+    .ticket-card.hidden { display: none; }
 
     .ticket-head {
       display: flex;
@@ -919,7 +917,7 @@
     </div>
   </section>
 
-  <!-- Section 3: Live Telemetry Section with Functional Regional Filter -->
+  <!-- Section 3: Secure Live Telemetry Section with PIN Lookup -->
   <section class="telemetry-section" id="coverage">
     <div class="section-title-block">
       <span class="section-subtitle">Real-Time Operational Telemetry</span>
@@ -927,7 +925,7 @@
     </div>
 
     <div class="telemetry-container">
-      <!-- Working Regional Quick-Filters -->
+      <!-- Regional Quick-Filters -->
       <div class="region-filters">
         <button class="region-btn active" onclick="filterRegion('all', this)">All Regions (100+)</button>
         <button class="region-btn" onclick="filterRegion('emea', this)">EMEA Hubs</button>
@@ -935,16 +933,26 @@
         <button class="region-btn" onclick="filterRegion('americas', this)">Americas</button>
       </div>
 
-      <div class="lookup-box">
-        <input type="text" class="lookup-input" placeholder="Enter Work Order Reference or Ticket Code (e.g. JSP-UK-8921)...">
-        <button class="btn btn-gradient"><i class="fa-solid fa-magnifying-glass"></i> Track Ticket</button>
-      </div>
+      <!-- Secure Lookup Form -->
+      <form id="trackingForm" onsubmit="trackTicket(event)">
+        <div class="lookup-box">
+          <input type="text" id="ticketInput" class="lookup-input" placeholder="Ticket Ref (e.g. JSP-UK-8921)" required style="flex: 2;">
+          <input type="password" id="pinInput" class="lookup-input" placeholder="4-Digit PIN" maxlength="6" required style="flex: 1;">
+          <button type="submit" class="btn btn-gradient" id="trackBtn">
+            <i class="fa-solid fa-lock"></i> Secure Lookup
+          </button>
+        </div>
+      </form>
 
-      <div class="telemetry-grid">
+      <!-- Result Display Container -->
+      <div id="trackingResult" style="margin-top: 20px;"></div>
+
+      <!-- Default Preset Sample Telemetry Cards -->
+      <div class="telemetry-grid" style="margin-top: 25px;">
         <div class="ticket-card" data-region="emea">
           <div class="ticket-head">
             <span class="ticket-id">JSP-UK-8921</span>
-            <span class="status-badge status-active">Active On-Site</span>
+            <span class="status-badge status-active">Completed</span>
           </div>
           <div class="ticket-body">Slough Equinix LD4, London UK</div>
           <div class="ticket-sub">Cisco Nexus Hardware Replacement</div>
@@ -953,7 +961,7 @@
         <div class="ticket-card" data-region="emea">
           <div class="ticket-head">
             <span class="ticket-id">JSP-DE-4412</span>
-            <span class="status-badge status-active">Active On-Site</span>
+            <span class="status-badge status-active">Ongoing</span>
           </div>
           <div class="ticket-body">Frankfurt DE-CIX Hub, Germany</div>
           <div class="ticket-sub">Fluke Fiber Optic Certification</div>
@@ -962,7 +970,7 @@
         <div class="ticket-card" data-region="apac">
           <div class="ticket-head">
             <span class="ticket-id">JSP-SG-1092</span>
-            <span class="status-badge status-enroute">En Route</span>
+            <span class="status-badge status-enroute">Arrived</span>
           </div>
           <div class="ticket-body">Changi Tech Park, Singapore</div>
           <div class="ticket-sub">Server Racking & Port Patching</div>
@@ -1249,8 +1257,6 @@
   <!-- ==========================================================================
      DETAILED ENTERPRISE LEGAL & POLICY MODALS
      ========================================================================== -->
-  
-  <!-- 1. Terms of Service & SLA Modal -->
   <div class="modal-overlay" id="termsModal">
     <div class="modal-card">
       <button class="modal-close" onclick="closeModal('termsModal')"><i class="fa-solid fa-xmark"></i></button>
@@ -1267,7 +1273,6 @@
     </div>
   </div>
 
-  <!-- 2. White-Label NDA, Non-Circumvention & Business Code of Conduct Modal -->
   <div class="modal-overlay" id="ndaModal">
     <div class="modal-card">
       <button class="modal-close" onclick="closeModal('ndaModal')"><i class="fa-solid fa-xmark"></i></button>
@@ -1284,7 +1289,6 @@
     </div>
   </div>
 
-  <!-- 3. Health & Safety Policy Modal -->
   <div class="modal-overlay" id="safetyModal">
     <div class="modal-card">
       <button class="modal-close" onclick="closeModal('safetyModal')"><i class="fa-solid fa-xmark"></i></button>
@@ -1299,7 +1303,6 @@
     </div>
   </div>
 
-  <!-- 4. Privacy Policy & GDPR Data Security Modal -->
   <div class="modal-overlay" id="privacyModal">
     <div class="modal-card">
       <button class="modal-close" onclick="closeModal('privacyModal')"><i class="fa-solid fa-xmark"></i></button>
@@ -1314,7 +1317,6 @@
     </div>
   </div>
 
-  <!-- 5. Legal Dispute Resolution Terms Modal -->
   <div class="modal-overlay" id="disputeModal">
     <div class="modal-card">
       <button class="modal-close" onclick="closeModal('disputeModal')"><i class="fa-solid fa-xmark"></i></button>
@@ -1329,7 +1331,7 @@
     </div>
   </div>
 
-  <!-- JavaScript for Modals & Regional Filtering -->
+  <!-- JavaScript for Modals, Regional Filtering & Secure PIN Telemetry Lookup -->
   <script>
     function openModal(modalId) {
       document.getElementById(modalId).style.display = 'flex';
@@ -1351,11 +1353,9 @@
 
     // Working Regional Filter Functionality for Section 3
     function filterRegion(region, btnElement) {
-      // Update active button state
       document.querySelectorAll('.region-btn').forEach(btn => btn.classList.remove('active'));
       btnElement.classList.add('active');
 
-      // Filter ticket cards
       const cards = document.querySelectorAll('.ticket-card');
       cards.forEach(card => {
         if (region === 'all' || card.getAttribute('data-region') === region) {
@@ -1364,6 +1364,63 @@
           card.classList.add('hidden');
         }
       });
+    }
+
+    // Secure PIN-Verified Telemetry Lookup Function
+    async function trackTicket(event) {
+      event.preventDefault();
+      const ticketRef = document.getElementById('ticketInput').value.trim();
+      const pinCode = document.getElementById('pinInput').value.trim();
+      const resultDiv = document.getElementById('trackingResult');
+      const trackBtn = document.getElementById('trackBtn');
+
+      const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwQum6GGrxDz1r36fspt1shYbc4vtljo198k0PmX-nJG6fAQzTqk9slUWe49Yrk6Agr/exec";
+
+      resultDiv.innerHTML = '<p style="color: var(--accent-cyan); text-align: center;"><i class="fa-solid fa-spinner fa-spin"></i> Verifying credentials & fetching telemetry...</p>';
+      trackBtn.disabled = true;
+
+      try {
+        const response = await fetch(SCRIPT_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify({ ticketRef, pinCode })
+        });
+
+        const data = await response.json();
+
+        if (data.status === 'success') {
+          const t = data.ticket;
+          let badgeClass = 'status-active';
+          if (t.activityStatus === 'Arrived') badgeClass = 'status-enroute';
+          if (t.activityStatus === 'Completed') badgeClass = 'status-active';
+
+          resultDiv.innerHTML = `
+            <div class="ticket-card" style="border: 1px solid var(--border-glow); padding: 20px; background: var(--card-inner); border-radius: 8px;">
+              <div class="ticket-head" style="display: flex; justify-content: space-between; align-items: center;">
+                <span class="ticket-id" style="font-size: 1.1rem; color: var(--accent-cyan); font-weight: 700;">${t.ticketRef}</span>
+                <span class="status-badge ${badgeClass}">${t.activityStatus}</span>
+              </div>
+              <div style="margin-top: 15px; line-height: 1.8; font-size: 0.9rem;">
+                <p><strong><i class="fa-solid fa-location-dot" style="color: var(--accent-cyan);"></i> Location:</strong> ${t.location}</p>
+                <p><strong><i class="fa-solid fa-screwdriver-wrench" style="color: var(--accent-cyan);"></i> Scope:</strong> ${t.scope}</p>
+                <p><strong><i class="fa-solid fa-user-gear" style="color: var(--accent-cyan);"></i> Engineer:</strong> ${t.engineer}</p>
+                <p><strong><i class="fa-solid fa-right-to-bracket" style="color: var(--accent-cyan);"></i> Check-In Time:</strong> ${t.checkIn}</p>
+                <p><strong><i class="fa-solid fa-right-from-bracket" style="color: var(--accent-cyan);"></i> Check-Out Time:</strong> ${t.checkOut}</p>
+                ${t.activityStatus === 'Completed' ? `<p style="margin-top: 10px;"><a href="${t.reportLink}" target="_blank" class="btn btn-gradient" style="padding: 6px 12px; font-size: 0.8rem;"><i class="fa-solid fa-file-pdf"></i> Download FSR Report (${t.reportLink})</a></p>` : ''}
+                <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 10px;">
+                  <i class="fa-solid fa-clock"></i> Last Telemetry Ping: ${t.lastUpdated}
+                </p>
+              </div>
+            </div>
+          `;
+        } else {
+          resultDiv.innerHTML = `<p style="color: #EF4444; text-align: center; font-weight: 600;"><i class="fa-solid fa-circle-xmark"></i> ${data.message}</p>`;
+        }
+      } catch (err) {
+        resultDiv.innerHTML = '<p style="color: #EF4444; text-align: center; font-weight: 600;"><i class="fa-solid fa-triangle-exclamation"></i> Unable to reach tracking service. Please try again later.</p>';
+      } finally {
+        trackBtn.disabled = false;
+      }
     }
   </script>
 </body>
