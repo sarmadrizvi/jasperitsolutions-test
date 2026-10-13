@@ -341,43 +341,18 @@
     }
 
     .telemetry-container {
-      max-width: 1000px;
+      max-width: 850px;
       margin: 0 auto;
       background: var(--card-bg);
       border: 1px solid var(--border-glow);
       border-radius: 12px;
-      padding: 30px;
+      padding: 35px;
       box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-    }
-
-    .region-filters {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin-bottom: 24px;
-    }
-
-    .region-btn {
-      background: var(--card-inner);
-      border: 1px solid var(--border-dark);
-      color: var(--text-muted);
-      padding: 6px 14px;
-      border-radius: 6px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-    .region-btn.active, .region-btn:hover {
-      background: rgba(0, 210, 254, 0.1);
-      border-color: var(--accent-cyan);
-      color: var(--accent-cyan);
     }
 
     .lookup-box {
       display: flex;
       gap: 12px;
-      margin-bottom: 24px;
       background: var(--card-inner);
       padding: 8px;
       border-radius: 8px;
@@ -396,36 +371,24 @@
 
     .lookup-input::placeholder { color: var(--text-muted); }
 
-    .telemetry-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-
     .ticket-card {
       background: var(--card-inner);
       border: 1px solid var(--border-dark);
       border-radius: 8px;
-      padding: 16px;
-      transition: opacity 0.3s ease, transform 0.3s ease;
+      padding: 20px;
     }
-
-    .ticket-card.hidden { display: none; }
 
     .ticket-head {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
-    .ticket-id { font-family: monospace; font-weight: 700; color: var(--accent-cyan); font-size: 0.85rem; }
-    .status-badge { font-size: 0.68rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; }
+    .ticket-id { font-family: monospace; font-weight: 700; color: var(--accent-cyan); font-size: 1.1rem; }
+    .status-badge { font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; }
     .status-active { background: var(--status-active-bg); color: var(--status-active-text); }
     .status-enroute { background: var(--status-enroute-bg); color: var(--status-enroute-text); }
-
-    .ticket-body { font-size: 0.85rem; color: var(--white); font-weight: 600; margin-bottom: 6px; }
-    .ticket-sub { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 12px; }
 
     /* Core Services Section */
     .services-section {
@@ -801,7 +764,7 @@
     @media (max-width: 768px) {
       .nav-container { display: none; }
       .hero-title { font-size: 2.2rem; }
-      .hero-stats-grid, .telemetry-grid { grid-template-columns: 1fr; }
+      .hero-stats-grid { grid-template-columns: 1fr; }
       .lookup-box { flex-direction: column; }
     }
   </style>
@@ -917,7 +880,7 @@
     </div>
   </section>
 
-  <!-- Section 3: Secure Live Telemetry Section with PIN Lookup -->
+  <!-- Section 3: Secure Live Telemetry Section with PIN Lookup (No Preset Previews) -->
   <section class="telemetry-section" id="coverage">
     <div class="section-title-block">
       <span class="section-subtitle">Real-Time Operational Telemetry</span>
@@ -925,18 +888,10 @@
     </div>
 
     <div class="telemetry-container">
-      <!-- Regional Quick-Filters -->
-      <div class="region-filters">
-        <button class="region-btn active" onclick="filterRegion('all', this)">All Regions (100+)</button>
-        <button class="region-btn" onclick="filterRegion('emea', this)">EMEA Hubs</button>
-        <button class="region-btn" onclick="filterRegion('apac', this)">APAC Hubs</button>
-        <button class="region-btn" onclick="filterRegion('americas', this)">Americas</button>
-      </div>
-
       <!-- Secure Lookup Form -->
       <form id="trackingForm" onsubmit="trackTicket(event)">
         <div class="lookup-box">
-          <input type="text" id="ticketInput" class="lookup-input" placeholder="Ticket Ref (e.g. JSP-UK-8921)" required style="flex: 2;">
+          <input type="text" id="ticketInput" class="lookup-input" placeholder="Enter Ticket Reference (e.g. JSP-UK-8921)" required style="flex: 2;">
           <input type="password" id="pinInput" class="lookup-input" placeholder="4-Digit PIN" maxlength="6" required style="flex: 1;">
           <button type="submit" class="btn btn-gradient" id="trackBtn">
             <i class="fa-solid fa-lock"></i> Secure Lookup
@@ -945,37 +900,7 @@
       </form>
 
       <!-- Result Display Container -->
-      <div id="trackingResult" style="margin-top: 20px;"></div>
-
-      <!-- Default Preset Sample Telemetry Cards -->
-      <div class="telemetry-grid" style="margin-top: 25px;">
-        <div class="ticket-card" data-region="emea">
-          <div class="ticket-head">
-            <span class="ticket-id">JSP-UK-8921</span>
-            <span class="status-badge status-active">Completed</span>
-          </div>
-          <div class="ticket-body">Slough Equinix LD4, London UK</div>
-          <div class="ticket-sub">Cisco Nexus Hardware Replacement</div>
-        </div>
-
-        <div class="ticket-card" data-region="emea">
-          <div class="ticket-head">
-            <span class="ticket-id">JSP-DE-4412</span>
-            <span class="status-badge status-active">Ongoing</span>
-          </div>
-          <div class="ticket-body">Frankfurt DE-CIX Hub, Germany</div>
-          <div class="ticket-sub">Fluke Fiber Optic Certification</div>
-        </div>
-
-        <div class="ticket-card" data-region="apac">
-          <div class="ticket-head">
-            <span class="ticket-id">JSP-SG-1092</span>
-            <span class="status-badge status-enroute">Arrived</span>
-          </div>
-          <div class="ticket-body">Changi Tech Park, Singapore</div>
-          <div class="ticket-sub">Server Racking & Port Patching</div>
-        </div>
-      </div>
+      <div id="trackingResult" style="margin-top: 25px;"></div>
     </div>
   </section>
 
@@ -1169,9 +1094,7 @@
     </div>
   </section>
 
-  <!-- ==========================================================================
-     SECTION 7: EXECUTIVE FOOTER & DETAILED ENTERPRISE LEGAL MODALS
-     ========================================================================== -->
+  <!-- Section 7: Executive Footer & Detailed Enterprise Legal Modals -->
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-col">
@@ -1254,9 +1177,7 @@
     </div>
   </footer>
 
-  <!-- ==========================================================================
-     DETAILED ENTERPRISE LEGAL & POLICY MODALS
-     ========================================================================== -->
+  <!-- Legal Modals -->
   <div class="modal-overlay" id="termsModal">
     <div class="modal-card">
       <button class="modal-close" onclick="closeModal('termsModal')"><i class="fa-solid fa-xmark"></i></button>
@@ -1331,7 +1252,7 @@
     </div>
   </div>
 
-  <!-- JavaScript for Modals, Regional Filtering & Secure PIN Telemetry Lookup -->
+  <!-- JavaScript for Modals & Secure PIN Telemetry Lookup -->
   <script>
     function openModal(modalId) {
       document.getElementById(modalId).style.display = 'flex';
@@ -1347,21 +1268,6 @@
         if (event.target === modal) {
           modal.style.display = 'none';
           document.body.style.overflow = 'auto';
-        }
-      });
-    }
-
-    // Working Regional Filter Functionality for Section 3
-    function filterRegion(region, btnElement) {
-      document.querySelectorAll('.region-btn').forEach(btn => btn.classList.remove('active'));
-      btnElement.classList.add('active');
-
-      const cards = document.querySelectorAll('.ticket-card');
-      cards.forEach(card => {
-        if (region === 'all' || card.getAttribute('data-region') === region) {
-          card.classList.remove('hidden');
-        } else {
-          card.classList.add('hidden');
         }
       });
     }
@@ -1392,22 +1298,35 @@
           const t = data.ticket;
           let badgeClass = 'status-active';
           if (t.activityStatus === 'Arrived') badgeClass = 'status-enroute';
+          if (t.activityStatus === 'Ongoing') badgeClass = 'status-enroute';
           if (t.activityStatus === 'Completed') badgeClass = 'status-active';
 
+          // Check if report/deliverables link exists and is valid
+          let deliverablesHTML = '';
+          if (t.reportLink && t.reportLink.toLowerCase() !== 'pending' && t.reportLink.trim() !== '') {
+            deliverablesHTML = `
+              <p style="margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border-dark);">
+                <strong><i class="fa-solid fa-file-arrow-down" style="color: var(--accent-cyan);"></i> Site Deliverables:</strong><br>
+                <a href="${t.reportLink}" target="_blank" class="btn btn-gradient" style="margin-top: 8px; padding: 7px 14px; font-size: 0.82rem;">
+                  <i class="fa-solid fa-download"></i> Download Report / Files
+                </a>
+              </p>`;
+          }
+
           resultDiv.innerHTML = `
-            <div class="ticket-card" style="border: 1px solid var(--border-glow); padding: 20px; background: var(--card-inner); border-radius: 8px;">
-              <div class="ticket-head" style="display: flex; justify-content: space-between; align-items: center;">
-                <span class="ticket-id" style="font-size: 1.1rem; color: var(--accent-cyan); font-weight: 700;">${t.ticketRef}</span>
+            <div class="ticket-card">
+              <div class="ticket-head">
+                <span class="ticket-id"><i class="fa-solid fa-ticket"></i> Verified Work Order</span>
                 <span class="status-badge ${badgeClass}">${t.activityStatus}</span>
               </div>
-              <div style="margin-top: 15px; line-height: 1.8; font-size: 0.9rem;">
+              <div style="margin-top: 12px; line-height: 1.8; font-size: 0.9rem;">
                 <p><strong><i class="fa-solid fa-location-dot" style="color: var(--accent-cyan);"></i> Location:</strong> ${t.location}</p>
                 <p><strong><i class="fa-solid fa-screwdriver-wrench" style="color: var(--accent-cyan);"></i> Scope:</strong> ${t.scope}</p>
                 <p><strong><i class="fa-solid fa-user-gear" style="color: var(--accent-cyan);"></i> Engineer:</strong> ${t.engineer}</p>
                 <p><strong><i class="fa-solid fa-right-to-bracket" style="color: var(--accent-cyan);"></i> Check-In Time:</strong> ${t.checkIn}</p>
                 <p><strong><i class="fa-solid fa-right-from-bracket" style="color: var(--accent-cyan);"></i> Check-Out Time:</strong> ${t.checkOut}</p>
-                ${t.activityStatus === 'Completed' ? `<p style="margin-top: 10px;"><a href="${t.reportLink}" target="_blank" class="btn btn-gradient" style="padding: 6px 12px; font-size: 0.8rem;"><i class="fa-solid fa-file-pdf"></i> Download FSR Report (${t.reportLink})</a></p>` : ''}
-                <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 10px;">
+                ${deliverablesHTML}
+                <p style="color: var(--text-muted); font-size: 0.78rem; margin-top: 12px;">
                   <i class="fa-solid fa-clock"></i> Last Telemetry Ping: ${t.lastUpdated}
                 </p>
               </div>
