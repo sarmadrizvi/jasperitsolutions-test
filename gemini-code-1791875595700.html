@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jasper IT Solutions | Global IT Field Services & White-Label Smart Hands</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Enterprise IT field services, data center smart hands, structured cabling, and UK hardware staging across 100+ countries. 99% SLA success rate. Partner with Jasper IT.">
+  <meta name="keywords" content="global smart hands, data center IT field services, UK hardware staging, structured cabling, Ekahau Wi-Fi survey, white-label IT support, MSP field partner">
+  <meta name="author" content="Jasper IT Solutions Ltd">
+
+  <!-- Schema.org Organization Structured Data for Google Search Console -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Jasper IT Solutions Ltd",
+    "url": "https://www.jasperitsol.com",
+    "logo": "https://www.jasperitsol.com/assets/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+44-7907-805430",
+      "contactType": "customer service",
+      "areaServed": "Global",
+      "availableLanguage": ["English"]
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GB",
+      "addressLocality": "London"
+    }
+  }
+  </script>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Exo+2:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --primary-navy: #060D18;
+      --card-bg: #0B1727;
+      --card-inner: #07101E;
+      --royal-blue: #1E64C8;
+      --accent-cyan: #00D2FE;
+      --border-dark: rgba(255, 255, 255, 0.08);
+      --border-glow: rgba(0, 210, 254, 0.25);
+      --text-light: #F1F5F9;
+      --text-muted: #94A3B8;
+      --white: #FFFFFF;
+      --green-active: #10B981;
+      --status-active-bg: rgba(16, 185, 129, 0.15);
+      --status-active-text: #34D399;
+      --status-enroute-bg: rgba(245, 158, 11, 0.15);
+      --status-enroute-text: #FBBF24;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background-color: var(--primary-navy); color: var(--text-light); line-height: 1.5; overflow-x: hidden; scroll-behavior: smooth; }
+
+    /* Top Utility Bar */
+    .utility-bar {
+      background: #030810;
+      color: var(--text-muted);
+      padding: 7px 5%;
+      font-size: 0.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-dark);
+    }
+    .utility-bar a { color: var(--text-light); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+    .utility-bar a:hover { color: var(--accent-cyan); }
+    .utility-left, .utility-right { display: flex; align-items: center; gap: 18px; }
+
+    /* Executive Navigation Header */
+    header {
+      background: var(--primary-navy);
+      border-bottom: 1px solid var(--border-dark);
+      padding: 12px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .brand-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      flex-shrink: 0;
+      margin-right: 32px;
+    }
+    .logo-graphic { width: 38px; height: 38px; display: block; }
+    .logo-text-block { display: flex; flex-direction: column; justify-content: center; line-height: 1.1; }
+    .logo-main-text {
+      font-family: 'Exo 2', sans-serif;
+      font-weight: 800;
+      font-size: 1.3rem;
+      color: var(--white);
+      letter-spacing: 0.5px;
+    }
+    .logo-main-text span { color: var(--accent-cyan); }
+    .logo-sub-text {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 0.62rem;
+      color: var(--text-muted);
+      letter-spacing: 2.2px;
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+      align-items: center;
+      font-weight: 600;
+      font-size: 0.88rem;
+    }
+    .nav-links a {
+      color: var(--text-light);
+      text-decoration: none;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+    .nav-links a:hover { color: var(--accent-cyan); }
+    
+    .pulse-dot-small {
+      width: 7px;
+      height: 7px;
+      background: var(--green-active);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--green-active);
+      display: inline-block;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+      margin-left: 20px;
+    }
+
+    .btn {
+      padding: 9px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.25s ease;
+      border: none;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .btn-outline-dark {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: var(--white);
+    }
+    .btn-outline-dark:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--accent-cyan);
+      color: var(--accent-cyan);
+    }
+
+    .btn-gradient {
+      background: linear-gradient(135deg, #00B4DB 0%, #0083B0 100%);
+      color: var(--white);
+      box-shadow: 0 4px 14px rgba(0, 180, 219, 0.25);
+    }
+    .btn-gradient:hover {
+      background: linear-gradient(135deg, #00C6FF 0%, #0072FF 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(0, 180, 219, 0.38);
+    }
+
+    /* Hero Section */
+    .hero-section {
+      padding: 80px 5% 70px 5%;
+      max-width: 1280px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 210, 254, 0.08);
+      border: 1px solid rgba(0, 210, 254, 0.25);
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--accent-cyan);
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-title {
+      font-family: 'Exo 2', sans-serif;
+      font-size: 3.2rem;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+      max-width: 950px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-title span {
+      background: linear-gradient(135deg, #FFFFFF 30%, var(--accent-cyan) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-description {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 36px;
+      line-height: 1.6;
+      max-width: 780px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-actions { 
+      display: flex; 
+      gap: 16px; 
+      justify-content: center; 
+      align-items: center;
+      margin-bottom: 45px;
+    }
+
+    .btn-hero-lg { padding: 14px 28px; font-size: 0.98rem; }
+
+    .trust-ticker {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 45px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      flex-wrap: wrap;
+    }
+    .trust-ticker span { display: flex; align-items: center; gap: 8px; color: var(--text-light); font-weight: 600; }
+    .trust-ticker i { color: var(--accent-cyan); }
+
+    .hero-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding-top: 36px;
+      border-top: 1px solid var(--border-dark);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .stat-card {
+      background: rgba(11, 23, 39, 0.6);
+      border: 1px solid var(--border-dark);
+      border-radius: 10px;
+      padding: 18px;
+      text-align: center;
+    }
+
+    .stat-value {
+      font-family: 'Exo 2', sans-serif;
+      font-size: 2.1rem;
+      font-weight: 800;
+      color: var(--white);
+    }
+    .stat-value span { color: var(--accent-cyan); }
+    .stat-label {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 4px;
+    }
+
+    /* Live Telemetry Section with Regional Filter Functionality */
+    .telemetry-section {
+      padding: 70px 5%;
+      background: #040912;
+      border-top: 1px solid var(--border-dark);
+      border-bottom: 1px solid var(--border-dark);
+    }
+
+    .section-title-block {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 30px auto;
+    }
+
+    .section-subtitle {
+      color: var(--accent-cyan);
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .section-main-title {
+      font-family: 'Exo 2', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--white);
+    }
+
+    .telemetry-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border-glow);
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+
+    .region-filters {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .region-btn {
+      background: var(--card-inner);
+      border: 1px solid var(--border-dark);
+      color: var(--text-muted);
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .region-btn.active, .region-btn:hover {
+      background: rgba(0, 210, 254, 0.1);
+      border-color: var(--accent-cyan);
+      color: var(--accent-cyan);
+    }
+
+    .lookup-box {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+      background: var(--card-inner);
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid var(--border-dark);
+    }
+
+    .lookup-input {
+      flex-grow: 1;
+      background: transparent;
+      border: none;
+      padding: 10px 16px;
+      color: var(--white);
+      font-size: 0.95rem;
+      outline: none;
+    }
+
+    .lookup-input::placeholder { color: var(--text-muted); }
+
+    .telemetry-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .ticket-card {
+      background: var(--card-inner);
+      border: 1px solid var(--border-dark);
+      border-radius: 8px;
+      padding: 16px;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .ticket-card.hidden {
+      display: none;
+    }
+
+    .ticket-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .ticket-id { font-family: monospace; font-weight: 700; color: var(--accent-cyan); font-size: 0.85rem; }
+    .status-badge { font-size: 0.68rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; }
+    .status-active { background: var(--status-active-bg); color: var(--status-active-text); }
+    .status-enroute { background: var(--status-enroute-bg); color: var(--status-enroute-text); }
+
+    .ticket-body { font-size: 0.85rem; color: var(--white); font-weight: 600; margin-bottom: 6px; }
+    .ticket-sub { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 12px; }
+
+    /* Core Services Section */
+    .services-section {
+      padding: 90px 5%;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 45px;
+    }
+
+    .service-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-dark);
+      border-radius: 12px;
+      padding: 28px;
+      position: relative;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .service-card:hover {
+      border-color: var(--border-glow);
+      transform: translateY(-4px);
+      box-shadow: 0 15px 35px rgba(0, 210, 254, 0.08);
+    }
+
+    .service-icon-box {
+      width: 48px;
+      height: 48px;
+      background: rgba(0, 210, 254, 0.08);
+      border: 1px solid rgba(0, 210, 254, 0.2);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      color: var(--accent-cyan);
+      margin-bottom: 18px;
+    }
+
+    .service-title {
+      font-family: 'Exo 2', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+
+    .service-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin-bottom: 20px;
+    }
+
+    .service-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-dark);
+    }
+
+    .service-list li {
+      font-size: 0.82rem;
+      color: var(--text-light);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      line-height: 1.4;
+    }
+
+    .service-list li i {
+      color: var(--accent-cyan);
+      font-size: 0.72rem;
+      margin-top: 3px;
+    }
+
+    /* Engineer Network Section */
+    .network-section {
+      background: var(--card-inner);
+      border-top: 1px solid var(--border-dark);
+      border-bottom: 1px solid var(--border-dark);
+      padding: 80px 5%;
+    }
+
+    .network-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+
+    .network-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border-dark);
+      border-radius: 12px;
+      padding: 36px;
+    }
+
+    .network-title {
+      font-family: 'Exo 2', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .network-title i { color: var(--accent-cyan); }
+
+    .network-p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      padding: 90px 5%;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 45px;
+    }
+
+    .faq-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border-dark);
+      border-radius: 10px;
+      padding: 24px;
+      transition: border-color 0.25s, transform 0.25s;
+    }
+
+    .faq-item:hover { border-color: var(--border-glow); }
+
+    .faq-question {
+      font-family: 'Exo 2', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .faq-question i { color: var(--accent-cyan); margin-top: 3px; }
+
+    .faq-answer {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .escalation-banner {
+      grid-column: 1 / -1;
+      background: linear-gradient(135deg, rgba(30, 100, 200, 0.15) 0%, rgba(0, 210, 254, 0.05) 100%);
+      border: 1px solid rgba(0, 210, 254, 0.3);
+      border-radius: 12px;
+      padding: 30px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 30px;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .escalation-title {
+      font-family: 'Exo 2', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .escalation-title i { color: #F59E0B; }
+
+    .escalation-p { font-size: 0.9rem; color: var(--text-light); line-height: 1.6; }
+
+    .escalation-steps {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background: rgba(6, 13, 24, 0.6);
+      padding: 18px;
+      border-radius: 8px;
+      border: 1px solid var(--border-dark);
+    }
+
+    .escalation-steps li {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-light);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .escalation-steps li span {
+      background: var(--royal-blue);
+      color: var(--white);
+      font-size: 0.72rem;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 800;
+    }
+
+    /* Executive Footer & Policy Modals */
+    .site-footer {
+      background: #030810;
+      border-top: 1px solid var(--border-dark);
+      padding: 60px 5% 30px 5%;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .footer-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-col h4 {
+      font-family: 'Exo 2', sans-serif;
+      color: var(--white);
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .footer-col p {
+      margin-bottom: 16px;
+      line-height: 1.6;
+      font-size: 0.85rem;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+      font-size: 0.85rem;
+    }
+
+    .footer-links a:hover { color: var(--accent-cyan); }
+
+    .footer-bottom {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding-top: 25px;
+      border-top: 1px solid var(--border-dark);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+    }
+
+    .footer-legal-links {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .footer-legal-links button {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 0.8rem;
+      transition: color 0.2s;
+    }
+    .footer-legal-links button:hover { color: var(--accent-cyan); }
+
+    /* Policy Modals */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(3, 8, 16, 0.88);
+      backdrop-filter: blur(6px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-glow);
+      border-radius: 12px;
+      max-width: 800px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 40px;
+      position: relative;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.7);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px; right: 20px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border-dark);
+      color: var(--white);
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s;
+    }
+    .modal-close:hover { background: rgba(255,255,255,0.15); color: var(--accent-cyan); }
+
+    .modal-title {
+      font-family: 'Exo 2', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-dark);
+    }
+
+    .modal-body {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .modal-body h4 { color: var(--white); font-size: 1.1rem; margin-top: 12px; font-weight: 700; }
+    .modal-body ul { margin-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+
+    @media (max-width: 1024px) {
+      .services-grid, .network-container, .faq-grid, .footer-container { grid-template-columns: 1fr; }
+      .escalation-banner { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; gap: 15px; text-align: center; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-container { display: none; }
+      .hero-title { font-size: 2.2rem; }
+      .hero-stats-grid, .telemetry-grid { grid-template-columns: 1fr; }
+      .lookup-box { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <div class="utility-bar">
+    <div class="utility-left">
+      <span><i class="fa-solid fa-building" style="color: var(--accent-cyan);"></i> UK Registered HQ</span>
+      <span>&nbsp;|&nbsp;</span>
+      <span><i class="fa-solid fa-warehouse" style="color: var(--accent-cyan);"></i> UK Staging & Warehousing</span>
+      <span>&nbsp;|&nbsp;</span>
+      <span><i class="fa-solid fa-globe" style="color: var(--accent-cyan);"></i> 100+ Countries Active Footprint</span>
+    </div>
+    <div class="utility-right">
+      <a href="tel:+447907805430"><i class="fa-solid fa-phone"></i> +44 7907 805430</a>
+      <span>&nbsp;|&nbsp;</span>
+      <a href="mailto:support@jasperitsol.com"><i class="fa-solid fa-envelope"></i> support@jasperitsol.com</a>
+    </div>
+  </div>
+
+  <!-- Executive Navigation Header -->
+  <header>
+    <a href="#" class="brand-container">
+      <svg class="logo-graphic" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50 10 C27.9 10 10 27.9 10 50 C10 72.1 27.9 90 50 90 L50 10 Z" fill="#1E64C8"/>
+        <rect x="26" y="22" width="6" height="6" fill="#FFFFFF"/>
+        <rect x="34" y="34" width="6" height="6" fill="#FFFFFF"/>
+        <rect x="22" y="46" width="6" height="6" fill="#FFFFFF"/>
+        <rect x="32" y="58" width="7" height="7" fill="#FFFFFF"/>
+        <rect x="24" y="72" width="6" height="6" fill="#FFFFFF"/>
+        <rect x="54" y="16" width="7" height="7" fill="#00D2FE"/>
+        <rect x="65" y="24" width="9" height="9" fill="#00D2FE"/>
+        <rect x="78" y="18" width="6" height="6" fill="#7F8C8D"/>
+        <rect x="54" y="32" width="10" height="10" fill="#00D2FE"/>
+        <rect x="68" y="38" width="8" height="8" fill="#7F8C8D"/>
+        <rect x="80" y="32" width="6" height="6" fill="#00D2FE"/>
+        <rect x="54" y="48" width="12" height="12" fill="#00D2FE"/>
+        <rect x="70" y="52" width="7" height="7" fill="#00D2FE"/>
+        <rect x="82" y="46" width="5" height="5" fill="#7F8C8D"/>
+        <rect x="54" y="66" width="9" height="9" fill="#00D2FE"/>
+        <rect x="67" y="64" width="6" height="6" fill="#7F8C8D"/>
+        <rect x="77" y="68" width="8" height="8" fill="#00D2FE"/>
+        <rect x="58" y="80" width="7" height="7" fill="#7F8C8D"/>
+      </svg>
+      <div class="logo-text-block">
+        <span class="logo-main-text">JASPER <span>IT</span></span>
+        <span class="logo-sub-text">SOLUTIONS</span>
+      </div>
+    </a>
+
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#coverage" style="color: var(--accent-cyan);"><span class="pulse-dot-small"></span> Global Coverage</a></li>
+        <li><a href="#partners">Partner Solutions</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <a href="#engineer" class="btn btn-outline-dark"><i class="fa-solid fa-user-plus"></i> Join Engineer Network</a>
+        <a href="#request" class="btn btn-gradient"><i class="fa-solid fa-bolt"></i> Log Service Request</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section 2: Hero Section + Trust Ticker -->
+  <section class="hero-section" id="about">
+    <div class="badge-pill">
+      <i class="fa-solid fa-shield-halved"></i> Global Smart Hands & Infrastructure Operations
+    </div>
+
+    <h1 class="hero-title">
+      White-Label IT Field Services for <span>Global SIs & MSPs</span>
+    </h1>
+
+    <p class="hero-description">
+      Deploy certified L1–L3 Smart Hands, data center engineering, structured fiber cabling, and multi-site retail hardware rollouts across 100+ countries under strict SLA guarantees.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#request" class="btn btn-gradient btn-hero-lg"><i class="fa-solid fa-bolt"></i> Log Service Request</a>
+      <a href="#partners" class="btn btn-outline-dark btn-hero-lg"><i class="fa-solid fa-handshake"></i> Partner Extension Model</a>
+    </div>
+
+    <div class="trust-ticker">
+      <span><i class="fa-solid fa-circle-check"></i> Equinix & Digital Realty Cleared</span>
+      <span>&bull;</span>
+      <span><i class="fa-solid fa-circle-check"></i> 100% White-Label NDA Compliant</span>
+      <span>&bull;</span>
+      <span><i class="fa-solid fa-circle-check"></i> Sub-30 Min Ticket Acknowledgment</span>
+    </div>
+
+    <div class="hero-stats-grid">
+      <div class="stat-card">
+        <div class="stat-value">99<span>%</span></div>
+        <div class="stat-label">SLA & Work Order Success Rate</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">5,000<span>+</span></div>
+        <div class="stat-label">Vetted Field Engineers</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">100<span>+</span></div>
+        <div class="stat-label">Countries Active Footprint</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">24<span>/7</span></div>
+        <div class="stat-label">Central Service Desk</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Live Telemetry Section with Functional Regional Filter -->
+  <section class="telemetry-section" id="coverage">
+    <div class="section-title-block">
+      <span class="section-subtitle">Real-Time Operational Telemetry</span>
+      <h2 class="section-main-title">Global Operations Control Center</h2>
+    </div>
+
+    <div class="telemetry-container">
+      <!-- Working Regional Quick-Filters -->
+      <div class="region-filters">
+        <button class="region-btn active" onclick="filterRegion('all', this)">All Regions (100+)</button>
+        <button class="region-btn" onclick="filterRegion('emea', this)">EMEA Hubs</button>
+        <button class="region-btn" onclick="filterRegion('apac', this)">APAC Hubs</button>
+        <button class="region-btn" onclick="filterRegion('americas', this)">Americas</button>
+      </div>
+
+      <div class="lookup-box">
+        <input type="text" class="lookup-input" placeholder="Enter Work Order Reference or Ticket Code (e.g. JSP-UK-8921)...">
+        <button class="btn btn-gradient"><i class="fa-solid fa-magnifying-glass"></i> Track Ticket</button>
+      </div>
+
+      <div class="telemetry-grid">
+        <div class="ticket-card" data-region="emea">
+          <div class="ticket-head">
+            <span class="ticket-id">JSP-UK-8921</span>
+            <span class="status-badge status-active">Active On-Site</span>
+          </div>
+          <div class="ticket-body">Slough Equinix LD4, London UK</div>
+          <div class="ticket-sub">Cisco Nexus Hardware Replacement</div>
+        </div>
+
+        <div class="ticket-card" data-region="emea">
+          <div class="ticket-head">
+            <span class="ticket-id">JSP-DE-4412</span>
+            <span class="status-badge status-active">Active On-Site</span>
+          </div>
+          <div class="ticket-body">Frankfurt DE-CIX Hub, Germany</div>
+          <div class="ticket-sub">Fluke Fiber Optic Certification</div>
+        </div>
+
+        <div class="ticket-card" data-region="apac">
+          <div class="ticket-head">
+            <span class="ticket-id">JSP-SG-1092</span>
+            <span class="status-badge status-enroute">En Route</span>
+          </div>
+          <div class="ticket-body">Changi Tech Park, Singapore</div>
+          <div class="ticket-sub">Server Racking & Port Patching</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Core Services -->
+  <section class="services-section" id="services">
+    <div class="section-title-block">
+      <span class="section-subtitle">Technical Capability Pillars</span>
+      <h2 class="section-main-title">Core On-Site IT Field Services</h2>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div>
+          <div class="service-icon-box"><i class="fa-solid fa-server"></i></div>
+          <h3 class="service-title">Data Center Smart Hands</h3>
+          <p class="service-desc">24/7 physical and technical dispatch across colocation hubs and carrier-neutral data centers.</p>
+        </div>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-check-double"></i> Racking, Stacking & Elevation Changes</li>
+          <li><i class="fa-solid fa-check-double"></i> Serial Console Access & Remote Triage</li>
+          <li><i class="fa-solid fa-check-double"></i> Cisco, Juniper, HP & Dell RMA Swaps</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div>
+          <div class="service-icon-box"><i class="fa-solid fa-wifi"></i></div>
+          <h3 class="service-title">Wi-Fi & RF Network Surveys</h3>
+          <p class="service-desc">Wireless site surveys utilizing industry-standard Ekahau software for enterprise wireless design.</p>
+        </div>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-check-double"></i> Ekahau Predictive & Active Heatmapping</li>
+          <li><i class="fa-solid fa-check-double"></i> Spectrum Analysis & Signal Audits</li>
+          <li><i class="fa-solid fa-check-double"></i> Access Point Mounting & Validation</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div>
+          <div class="service-icon-box"><i class="fa-solid fa-network-wired"></i></div>
+          <h3 class="service-title">Patching & Rack Cleanup</h3>
+          <p class="service-desc">Structured cable patching, rack dressing, and trace-and-tag remediation for communications closets.</p>
+        </div>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-check-double"></i> Cat6/Cat6A & Fiber Patching & Dressing</li>
+          <li><i class="fa-solid fa-check-double"></i> Cable Auditing, Tracing & Labeling</li>
+          <li><i class="fa-solid fa-check-double"></i> Fluke Certification & OTDR Fiber Testing</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div>
+          <div class="service-icon-box"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+          <h3 class="service-title">On-Site Network Diagnostics</h3>
+          <p class="service-desc">Emergency L1-L3 field engineers dispatched to diagnose link outages and hardware faults.</p>
+        </div>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-check-double"></i> Layer 1/2 Outage & Loopback Testing</li>
+          <li><i class="fa-solid fa-check-double"></i> Console Boot Log Capture & Remote Triage</li>
+          <li><i class="fa-solid fa-check-double"></i> Transceiver (SFP/SFP+) & PSU Field Swaps</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div>
+          <div class="service-icon-box"><i class="fa-solid fa-warehouse"></i></div>
+          <h3 class="service-title">UK Staging & Warehousing</h3>
+          <p class="service-desc">Secure UK storage facility offering hardware staging, pre-configuration, and rapid field dispatch.</p>
+        </div>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-check-double"></i> Asset Tagging & Secure Inventory Audits</li>
+          <li><i class="fa-solid fa-check-double"></i> OS Pre-Imaging & Firmware Flashing</li>
+          <li><i class="fa-solid fa-check-double"></i> Express Same-Day UK & EU Courier Dispatch</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div>
+          <div class="service-icon-box"><i class="fa-solid fa-shop"></i></div>
+          <h3 class="service-title">Retail Rollouts & Commercial IMAC</h3>
+          <p class="service-desc">Multi-site technology deployments for commercial chains, office relocations, and high-street retail networks.</p>
+        </div>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-check-double"></i> POS Terminals, Scanners & Thermal Printers</li>
+          <li><i class="fa-solid fa-check-double"></i> Commercial CCTV & Access Control Hardware</li>
+          <li><i class="fa-solid fa-check-double"></i> Office IMAC (Installs, Moves, Adds, Changes)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Engineer Network & Task-Specific Equipment -->
+  <section class="network-section" id="partners">
+    <div class="section-title-block">
+      <span class="section-subtitle">Operational Excellence & Mobility</span>
+      <h2 class="section-main-title">Vetted Field Network & Tailored Dispatch Toolkits</h2>
+    </div>
+
+    <div class="network-container">
+      <div class="network-box">
+        <h3 class="network-title">
+          <i class="fa-solid fa-users-gear"></i> 5,000+ Vetted Field Engineers
+        </h3>
+        <p class="network-p">
+          Our global pool consists of background-checked L1, L2, and L3 network, systems, and cabling specialists stationed across 100+ countries.
+        </p>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-check-double"></i> <strong>Dual-Language Capability:</strong> Local native language fluency paired with fluent professional English for clear NOC/SOC communications.</li>
+          <li><i class="fa-solid fa-check-double"></i> <strong>Strict White-Label Compliance:</strong> Unbranded professional attire or client-branded badges under signed non-disclosure agreements (NDAs).</li>
+          <li><i class="fa-solid fa-check-double"></i> <strong>Colocation Site Clearance:</strong> Active clearance and verified ID credentials for Equinix, Digital Realty, NTT, and Interxion hubs worldwide.</li>
+        </ul>
+      </div>
+
+      <div class="network-box">
+        <h3 class="network-title">
+          <i class="fa-solid fa-truck-ramp-box"></i> Standardized Toolkits & Optional Access Gear
+        </h3>
+        <p class="network-p">
+          Engineers arrive on-site with core diagnostic tools, with specialized physical access equipment and transport dispatched based on work order requirements.
+        </p>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-check-double"></i> <strong>Standard Diagnostic Toolkit:</strong> Fluke copper/fiber testers, OTDRs, Ekahau sidekicks, rollover console cables, and precision hand tools.</li>
+          <li><i class="fa-solid fa-check-double"></i> <strong>Height & Access Gear (On Request):</strong> Fiberglass safety ladders, step-stools, and full PPE dispatched when high-ceiling cabling or AP mounting is required.</li>
+          <li><i class="fa-solid fa-check-double"></i> <strong>Personal Vehicles & Cargo Transport (Optional):</strong> Dedicated technician vehicles available on demand for multi-site deployments and heavy hardware transport.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Frequently Asked Questions & Escalations -->
+  <section class="faq-section" id="faq">
+    <div class="section-title-block">
+      <span class="section-subtitle">Got Questions?</span>
+      <h2 class="section-main-title">Frequently Asked Questions & Escalation SLA</h2>
+    </div>
+
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h3 class="faq-question">
+          <i class="fa-solid fa-circle-question"></i> How fast can you dispatch an engineer for emergency break-fix?
+        </h3>
+        <p class="faq-answer">
+          Our Centralized 24/7 Service Desk acknowledges incoming tickets in <strong>under 30 minutes</strong>. For critical sites in major metropolitan hubs across 100+ countries, emergency on-site arrival SLAs range from <strong>2 to 4 hours</strong>.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">
+          <i class="fa-solid fa-user-shield"></i> Are field dispatches 100% white-labeled for SIs and MSPs?
+        </h3>
+        <p class="faq-answer">
+          Yes. Our engineers operate strictly under signed Non-Disclosure Agreements (NDAs). They arrive at end-user locations in unbranded professional attire or wearing your co-branded digital credentials, representing your brand seamlessly.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">
+          <i class="fa-solid fa-screwdriver-wrench"></i> What tools and access gear do engineers bring on-site?
+        </h3>
+        <p class="faq-answer">
+          Every technician arrives equipped with standard network diagnostics (Fluke copper/fiber testers, console rollover cables, hand tools). Specialized requirements—such as fiberglass safety ladders, step-stools, OTDRs, or personal service vans—are specified and dispatched during work order booking.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">
+          <i class="fa-solid fa-language"></i> Do engineers speak fluent English for remote NOC bridge calls?
+        </h3>
+        <p class="faq-answer">
+          Yes. Every engineer in our 5,000+ global pool possesses dual-language capability: native local language fluency to interface with site host contacts, plus fluent professional English for real-time console bridge calls with your remote NOC/SOC team.
+        </p>
+      </div>
+
+      <div class="escalation-banner">
+        <div>
+          <h3 class="escalation-title">
+            <i class="fa-solid fa-triangle-exclamation"></i> How Are On-Site Escalations Handled?
+          </h3>
+          <p class="escalation-p">
+            In the rare event of on-site technical blockers, failed hardware replacements, or unexpected access delays, Jasper IT Solutions enforces a rigid, time-bound escalation procedure managed by our 24/7 Duty Operations Directors.
+          </p>
+        </div>
+
+        <ul class="escalation-steps">
+          <li><span>T + 0m</span> Immediate Field Lead Triage & Console Capture</li>
+          <li><span>T + 15m</span> Tier-3 Network Architect Direct Escalation</li>
+          <li><span>T + 30m</span> Duty Operations Director & Client Incident Alert</li>
+          <li><span>SLA Guarantee</span> 99% First-Time Fix & Resolution Assurance</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     SECTION 7: EXECUTIVE FOOTER & DETAILED ENTERPRISE LEGAL MODALS
+     ========================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <div class="brand-container" style="margin-bottom: 15px;">
+          <svg class="logo-graphic" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:30px; height:30px;">
+            <path d="M50 10 C27.9 10 10 27.9 10 50 C10 72.1 27.9 90 50 90 L50 10 Z" fill="#1E64C8"/>
+            <rect x="26" y="22" width="6" height="6" fill="#FFFFFF"/>
+            <rect x="34" y="34" width="6" height="6" fill="#FFFFFF"/>
+            <rect x="22" y="46" width="6" height="6" fill="#FFFFFF"/>
+            <rect x="32" y="58" width="7" height="7" fill="#FFFFFF"/>
+            <rect x="24" y="72" width="6" height="6" fill="#FFFFFF"/>
+            <rect x="54" y="16" width="7" height="7" fill="#00D2FE"/>
+            <rect x="65" y="24" width="9" height="9" fill="#00D2FE"/>
+            <rect x="78" y="18" width="6" height="6" fill="#7F8C8D"/>
+            <rect x="54" y="32" width="10" height="10" fill="#00D2FE"/>
+            <rect x="68" y="38" width="8" height="8" fill="#7F8C8D"/>
+            <rect x="80" y="32" width="6" height="6" fill="#00D2FE"/>
+            <rect x="54" y="48" width="12" height="12" fill="#00D2FE"/>
+            <rect x="70" y="52" width="7" height="7" fill="#00D2FE"/>
+            <rect x="82" y="46" width="5" height="5" fill="#7F8C8D"/>
+            <rect x="54" y="66" width="9" height="9" fill="#00D2FE"/>
+            <rect x="67" y="64" width="6" height="6" fill="#7F8C8D"/>
+            <rect x="77" y="68" width="8" height="8" fill="#00D2FE"/>
+            <rect x="58" y="80" width="7" height="7" fill="#7F8C8D"/>
+          </svg>
+          <div class="logo-text-block">
+            <span class="logo-main-text" style="font-size: 1.1rem;">JASPER <span>IT</span></span>
+            <span class="logo-sub-text" style="font-size: 0.55rem;">SOLUTIONS</span>
+          </div>
+        </div>
+        <p>
+          Global IT Field Services, Smart Hands, and Secure UK Staging Solutions empowering System Integrators and Managed Service Providers across 100+ countries.
+        </p>
+        <p style="color: var(--white); font-weight: 600; font-size: 0.82rem;">
+          <i class="fa-solid fa-phone" style="color: var(--accent-cyan);"></i> +44 7907 805430 &bull; support@jasperitsol.com
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Core Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Data Center Smart Hands</a></li>
+          <li><a href="#services">Wi-Fi & Ekahau Surveys</a></li>
+          <li><a href="#services">Structured Cabling & Fiber</a></li>
+          <li><a href="#services">On-Site Diagnostics</a></li>
+          <li><a href="#services">UK Staging & Warehousing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Partner Solutions</h4>
+        <ul class="footer-links">
+          <li><a href="#partners">SI & MSP Extensions</a></li>
+          <li><a href="#partners">White-Label Compliance</a></li>
+          <li><a href="#coverage">Global Operations Control</a></li>
+          <li><a href="#faq">Escalation SLA Matrix</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Corporate HQ</h4>
+        <p>
+          <strong>Jasper IT Solutions Ltd</strong><br>
+          UK Registered Headquarters<br>
+          Secure Warehousing & Staging Facility<br>
+          <span style="color: var(--green-active);"><i class="fa-solid fa-circle" style="font-size: 7px;"></i> 24/7 Dispatch Operations Active</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; 2026 Jasper IT Solutions Ltd. All rights reserved.</div>
+      <div class="footer-legal-links">
+        <button onclick="openModal('termsModal')">Terms of Service & SLAs</button>
+        <button onclick="openModal('ndaModal')">White-Label NDA & Conduct</button>
+        <button onclick="openModal('safetyModal')">Health & Safety Policy</button>
+        <button onclick="openModal('privacyModal')">Privacy & GDPR</button>
+        <button onclick="openModal('disputeModal')">Legal Dispute Resolution</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+     DETAILED ENTERPRISE LEGAL & POLICY MODALS
+     ========================================================================== -->
+  
+  <!-- 1. Terms of Service & SLA Modal -->
+  <div class="modal-overlay" id="termsModal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal('termsModal')"><i class="fa-solid fa-xmark"></i></button>
+      <h3 class="modal-title">Terms of Service & Enterprise SLA Framework</h3>
+      <div class="modal-body">
+        <p><strong>Effective Date:</strong> October 2026 | <strong>Company:</strong> Jasper IT Solutions Ltd</p>
+        <h4>1. Scope of Engagement</h4>
+        <p>Jasper IT Solutions Ltd provides professional white-label IT field engineering, data center smart hands, structured cabling, and secure UK warehousing staging to System Integrators (SIs) and Managed Service Providers (MSPs).</p>
+        <h4>2. Service Level Agreements (SLAs) & Client-Caused Delays</h4>
+        <p>Emergency arrival SLAs are calculated strictly from the time of ticket acknowledgment by our 24/7 Service Desk. In the event of <strong>Client-Caused Delays</strong>—including delayed facility access clearances, missing replacement hardware, or site host unavailability—the active SLA clock safely pauses until site access or required materials are fully provided.</p>
+        <h4>3. Hardware Handling & Insurance Liability</h4>
+        <p>All on-site hardware replacements and staging are covered under comprehensive professional indemnity and public liability insurance. Liability for customer-owned hardware inside colocation facilities is governed strictly by agreed Master Services Agreements (MSAs).</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. White-Label NDA, Non-Circumvention & Business Code of Conduct Modal -->
+  <div class="modal-overlay" id="ndaModal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal('ndaModal')"><i class="fa-solid fa-xmark"></i></button>
+      <h3 class="modal-title">White-Label NDA & Business Code of Conduct</h3>
+      <div class="modal-body">
+        <p>Jasper IT Solutions operates strictly as an invisible back-end partner. Our Business Code of Conduct guarantees absolute brand protection for our enterprise clients.</p>
+        <h4>1. Perpetual Non-Circumvention</h4>
+        <p>All deployed engineers are bound by perpetual non-circumvention covenants. Field representatives are strictly prohibited from soliciting, contacting, or contracting directly with end-user client sites introduced through Jasper dispatches.</p>
+        <h4>2. Brand & Documentation Sanity</h4>
+        <p>Field engineers wear unbranded professional attire or client-provided badges and utilize sanitized documentation templates, guaranteeing absolute brand protection on-site.</p>
+        <h4>3. Business Ethics & Anti-Corruption</h4>
+        <p>Jasper IT Solutions enforces zero-tolerance policies regarding bribery, kickbacks, or unethical gifts. All technicians undergo rigorous background and compliance screenings before stepping on-site.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Health & Safety Policy Modal -->
+  <div class="modal-overlay" id="safetyModal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal('safetyModal')"><i class="fa-solid fa-xmark"></i></button>
+      <h3 class="modal-title">Health & Safety Policy</h3>
+      <div class="modal-body">
+        <p>The safety and well-being of our engineers, client personnel, and site hosts are paramount across all global operations.</p>
+        <h4>1. Personal Protective Equipment (PPE) & Compliance</h4>
+        <p>All field engineers are mandated to adhere strictly to local facility safety regulations, wearing steel-toe footwear, high-visibility vests, protective eyewear, and specialized PPE as required inside data centers and construction sites.</p>
+        <h4>2. Equipment Safety & Height Guidelines</h4>
+        <p>Fiberglass safety ladders, step-stools, and lifting equipment are inspected regularly and dispatched in accordance with rigorous occupational safety standards to eliminate overhead or electrical hazards.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Privacy Policy & GDPR Data Security Modal -->
+  <div class="modal-overlay" id="privacyModal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal('privacyModal')"><i class="fa-solid fa-xmark"></i></button>
+      <h3 class="modal-title">Privacy Policy & GDPR Data Security</h3>
+      <div class="modal-body">
+        <p>Jasper IT Solutions Ltd is fully committed to upholding UK GDPR compliance and protecting sensitive operational data shared by enterprise SIs and MSPs.</p>
+        <h4>1. Site Access & Credential Handling</h4>
+        <p>All physical security badges, colocation clearance IDs, and site contact lists submitted for dispatch are encrypted in transit and securely purged from active technician devices within 48 hours of work order completion.</p>
+        <h4>2. Operational Telemetry Logs</h4>
+        <p>Ticket metadata and diagnostic logs are retained strictly for auditing and quality assurance under enterprise security protocols, never shared with third parties.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Legal Dispute Resolution Terms Modal -->
+  <div class="modal-overlay" id="disputeModal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal('disputeModal')"><i class="fa-solid fa-xmark"></i></button>
+      <h3 class="modal-title">Legal Dispute Resolution & Governing Law</h3>
+      <div class="modal-body">
+        <p>In the event of any commercial disagreement, contractual dispute, or claim arising out of or in connection with services rendered by Jasper IT Solutions Ltd, the following resolution framework applies:</p>
+        <h4>1. Executive Negotiation & Escalation</h4>
+        <p>Both parties agree to first attempt resolution in good faith via direct negotiation between designated Senior Executive Directors within thirty (30) written notice days of a dispute arising.</p>
+        <h4>2. Governing Law & Jurisdiction</h4>
+        <p>These terms, active work orders, and associated Master Services Agreements shall be governed by and construed in accordance with the laws of <strong>England and Wales</strong>. Both parties irrevocably submit to the exclusive jurisdiction of the courts of England and Wales to settle any legal claim or dispute.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript for Modals & Regional Filtering -->
+  <script>
+    function openModal(modalId) {
+      document.getElementById(modalId).style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal(modalId) {
+      document.getElementById(modalId).style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+    window.onclick = function(event) {
+      ['termsModal', 'ndaModal', 'safetyModal', 'privacyModal', 'disputeModal'].forEach(id => {
+        let modal = document.getElementById(id);
+        if (event.target === modal) {
+          modal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+        }
+      });
+    }
+
+    // Working Regional Filter Functionality for Section 3
+    function filterRegion(region, btnElement) {
+      // Update active button state
+      document.querySelectorAll('.region-btn').forEach(btn => btn.classList.remove('active'));
+      btnElement.classList.add('active');
+
+      // Filter ticket cards
+      const cards = document.querySelectorAll('.ticket-card');
+      cards.forEach(card => {
+        if (region === 'all' || card.getAttribute('data-region') === region) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
