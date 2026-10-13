@@ -3,14 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jasper IT Solutions | Global IT Field Services & White-Label Smart Hands</title>
+  <title>Jasper IT Solutions Ltd | Global IT Field Services & White-Label Smart Hands</title>
   
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Enterprise IT field services, data center smart hands, structured cabling, and UK hardware staging across 100+ countries. 99% SLA success rate. Partner with Jasper IT.">
+  <meta name="description" content="Enterprise IT field services, data center smart hands, structured cabling, and UK hardware staging across 100+ countries. Partner with Jasper IT Solutions Ltd.">
   <meta name="keywords" content="global smart hands, data center IT field services, UK hardware staging, structured cabling, Ekahau Wi-Fi survey, white-label IT support, MSP field partner">
   <meta name="author" content="Jasper IT Solutions Ltd">
 
-  <!-- Schema.org Organization Structured Data for Google Search Console -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -33,752 +31,220 @@
   }
   </script>
 
-  <!-- Google Fonts & Font Awesome Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Exo+2:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Exo+2:ital,wght@0,700;0,800;0,900;1,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
     :root {
-      --primary-navy: #060D18;
-      --card-bg: #0B1727;
-      --card-inner: #07101E;
-      --royal-blue: #1E64C8;
-      --accent-cyan: #00D2FE;
-      --border-dark: rgba(255, 255, 255, 0.08);
-      --border-glow: rgba(0, 210, 254, 0.25);
-      --text-light: #F1F5F9;
-      --text-muted: #94A3B8;
-      --white: #FFFFFF;
-      --green-active: #10B981;
-      --status-active-bg: rgba(16, 185, 129, 0.15);
-      --status-active-text: #34D399;
-      --status-enroute-bg: rgba(245, 158, 11, 0.15);
-      --status-enroute-text: #FBBF24;
+      --bg-main: #F8FAFC;
+      --bg-alt: #EDF2F7;
+      --card-white: #FFFFFF;
+      --navy-primary: #0F2C59;
+      --navy-dark: #071731;
+      --navy-soft: #1A437E;
+      --cyan-accent: #0082FB;
+      --cyan-light: #EBF5FF;
+      --text-dark: #0F172A;
+      --text-muted: #475569;
+      --border-light: #E2E8F0;
+      --green-active: #059669;
+      --status-active-bg: #D1FAE5;
+      --status-active-text: #065F46;
+      --status-enroute-bg: #FEF3C7;
+      --status-enroute-text: #92400E;
+      --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08);
+      --shadow-md: 0 10px 25px -5px rgba(15, 44, 89, 0.1), 0 8px 10px -6px rgba(15, 44, 89, 0.05);
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
-    body { background-color: var(--primary-navy); color: var(--text-light); line-height: 1.5; overflow-x: hidden; scroll-behavior: smooth; }
+    body { background-color: var(--bg-main); color: var(--text-dark); line-height: 1.6; overflow-x: hidden; scroll-behavior: smooth; }
 
-    /* Top Utility Bar */
     .utility-bar {
-      background: #030810;
-      color: var(--text-muted);
-      padding: 7px 5%;
+      background: var(--navy-dark);
+      color: #94A3B8;
+      padding: 8px 5%;
       font-size: 0.8rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid var(--border-dark);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
-    .utility-bar a { color: var(--text-light); text-decoration: none; font-weight: 500; transition: color 0.2s; }
-    .utility-bar a:hover { color: var(--accent-cyan); }
+    .utility-bar a { color: #F1F5F9; text-decoration: none; font-weight: 500; transition: color 0.2s; }
+    .utility-bar a:hover { color: var(--cyan-accent); }
     .utility-left, .utility-right { display: flex; align-items: center; gap: 18px; }
 
-    /* Executive Navigation Header */
     header {
-      background: var(--primary-navy);
-      border-bottom: 1px solid var(--border-dark);
-      padding: 12px 5%;
+      background: var(--card-white);
+      border-bottom: 1px solid var(--border-light);
+      padding: 14px 5%;
       display: flex;
       align-items: center;
       justify-content: space-between;
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      box-shadow: var(--shadow-sm);
     }
 
     .brand-container {
       display: flex;
       align-items: center;
-      gap: 12px;
       text-decoration: none;
       flex-shrink: 0;
-      margin-right: 32px;
-    }
-    .logo-graphic { width: 38px; height: 38px; display: block; }
-    .logo-text-block { display: flex; flex-direction: column; justify-content: center; line-height: 1.1; }
-    .logo-main-text {
-      font-family: 'Exo 2', sans-serif;
-      font-weight: 800;
-      font-size: 1.3rem;
-      color: var(--white);
-      letter-spacing: 0.5px;
-    }
-    .logo-main-text span { color: var(--accent-cyan); }
-    .logo-sub-text {
-      font-family: 'Inter', sans-serif;
-      font-weight: 700;
-      font-size: 0.62rem;
-      color: var(--text-muted);
-      letter-spacing: 2.2px;
+      margin-right: 25px;
     }
 
-    .nav-container {
-      display: flex;
-      align-items: center;
-      flex-grow: 1;
-      justify-content: space-between;
-    }
+    .logo-svg-brand { height: 42px; width: auto; display: block; }
 
-    .nav-links {
-      display: flex;
-      gap: 24px;
-      list-style: none;
-      align-items: center;
-      font-weight: 600;
-      font-size: 0.88rem;
-    }
-    .nav-links a {
-      color: var(--text-light);
-      text-decoration: none;
-      transition: all 0.2s ease;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      white-space: nowrap;
-    }
-    .nav-links a:hover { color: var(--accent-cyan); }
+    .nav-container { display: flex; align-items: center; flex-grow: 1; justify-content: space-between; }
+    .nav-links { display: flex; gap: 24px; list-style: none; align-items: center; font-weight: 600; font-size: 0.88rem; }
+    .nav-links a { color: var(--navy-primary); text-decoration: none; transition: all 0.2s ease; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+    .nav-links a:hover { color: var(--cyan-accent); }
     
-    .pulse-dot-small {
-      width: 7px;
-      height: 7px;
-      background: var(--green-active);
-      border-radius: 50%;
-      box-shadow: 0 0 8px var(--green-active);
-      display: inline-block;
-    }
-
-    .header-actions {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      flex-shrink: 0;
-      margin-left: 20px;
-    }
+    .pulse-dot-small { width: 7px; height: 7px; background: var(--green-active); border-radius: 50%; box-shadow: 0 0 8px var(--green-active); display: inline-block; }
+    .header-actions { display: flex; align-items: center; gap: 12px; flex-shrink: 0; margin-left: 20px; }
 
     .btn {
-      padding: 9px 16px;
-      border-radius: 6px;
-      font-weight: 600;
-      font-size: 0.85rem;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: all 0.25s ease;
-      border: none;
-      text-decoration: none;
-      white-space: nowrap;
+      padding: 10px 18px; border-radius: 6px; font-weight: 600; font-size: 0.85rem; cursor: pointer;
+      display: inline-flex; align-items: center; gap: 8px; transition: all 0.25s ease; border: none; text-decoration: none; white-space: nowrap;
     }
-
-    .btn-outline-dark {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      color: var(--white);
-    }
-    .btn-outline-dark:hover {
-      background: rgba(255, 255, 255, 0.08);
-      border-color: var(--accent-cyan);
-      color: var(--accent-cyan);
-    }
-
+    .btn-outline-navy { background: transparent; border: 1px solid var(--navy-primary); color: var(--navy-primary); }
+    .btn-outline-navy:hover { background: var(--navy-primary); color: var(--card-white); }
     .btn-gradient {
-      background: linear-gradient(135deg, #00B4DB 0%, #0083B0 100%);
-      color: var(--white);
-      box-shadow: 0 4px 14px rgba(0, 180, 219, 0.25);
+      background: linear-gradient(135deg, var(--navy-primary) 0%, var(--cyan-accent) 100%);
+      color: var(--card-white); box-shadow: 0 4px 12px rgba(15, 44, 89, 0.2);
     }
     .btn-gradient:hover {
-      background: linear-gradient(135deg, #00C6FF 0%, #0072FF 100%);
-      transform: translateY(-1px);
-      box-shadow: 0 6px 18px rgba(0, 180, 219, 0.38);
+      background: linear-gradient(135deg, var(--navy-soft) 0%, #006ED4 100%);
+      transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0, 130, 251, 0.3);
     }
 
-    /* Hero Section */
-    .hero-section {
-      padding: 80px 5% 70px 5%;
-      max-width: 1280px;
-      margin: 0 auto;
-      text-align: center;
-      position: relative;
-    }
-
+    .hero-section { padding: 80px 5% 70px 5%; max-width: 1280px; margin: 0 auto; text-align: center; position: relative; }
     .badge-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(0, 210, 254, 0.08);
-      border: 1px solid rgba(0, 210, 254, 0.25);
-      padding: 6px 16px;
-      border-radius: 30px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--accent-cyan);
-      margin-bottom: 24px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
+      display: inline-flex; align-items: center; gap: 8px; background: var(--cyan-light); border: 1px solid rgba(0, 130, 251, 0.25);
+      padding: 6px 16px; border-radius: 30px; font-size: 0.82rem; font-weight: 700; color: var(--navy-primary); margin-bottom: 24px; text-transform: uppercase; letter-spacing: 0.5px;
     }
-
-    .hero-title {
-      font-family: 'Exo 2', sans-serif;
-      font-size: 3.2rem;
-      font-weight: 800;
-      color: var(--white);
-      line-height: 1.15;
-      margin-bottom: 20px;
-      letter-spacing: -0.5px;
-      max-width: 950px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .hero-title span {
-      background: linear-gradient(135deg, #FFFFFF 30%, var(--accent-cyan) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .hero-description {
-      font-size: 1.1rem;
-      color: var(--text-muted);
-      margin-bottom: 36px;
-      line-height: 1.6;
-      max-width: 780px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .hero-actions { 
-      display: flex; 
-      gap: 16px; 
-      justify-content: center; 
-      align-items: center;
-      margin-bottom: 45px;
-    }
-
+    .hero-title { font-family: 'Exo 2', sans-serif; font-size: 3.2rem; font-weight: 800; color: var(--navy-dark); line-height: 1.15; margin-bottom: 20px; letter-spacing: -0.5px; max-width: 950px; margin-left: auto; margin-right: auto; }
+    .hero-title span { color: var(--cyan-accent); }
+    .hero-description { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 36px; line-height: 1.6; max-width: 780px; margin-left: auto; margin-right: auto; }
+    .hero-actions { display: flex; gap: 16px; justify-content: center; align-items: center; margin-bottom: 45px; flex-wrap: wrap; }
     .btn-hero-lg { padding: 14px 28px; font-size: 0.98rem; }
 
-    .trust-ticker {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-      margin-bottom: 45px;
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      flex-wrap: wrap;
-    }
-    .trust-ticker span { display: flex; align-items: center; gap: 8px; color: var(--text-light); font-weight: 600; }
-    .trust-ticker i { color: var(--accent-cyan); }
+    .trust-ticker { display: flex; justify-content: center; align-items: center; gap: 30px; margin-bottom: 45px; font-size: 0.82rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; flex-wrap: wrap; }
+    .trust-ticker span { display: flex; align-items: center; gap: 8px; color: var(--navy-primary); font-weight: 700; }
+    .trust-ticker i { color: var(--cyan-accent); }
 
-    .hero-stats-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-      padding-top: 36px;
-      border-top: 1px solid var(--border-dark);
-      max-width: 1100px;
-      margin: 0 auto;
-    }
+    .hero-stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding-top: 36px; border-top: 1px solid var(--border-light); max-width: 1100px; margin: 0 auto; }
+    .stat-card { background: var(--card-white); border: 1px solid var(--border-light); border-radius: 10px; padding: 20px; text-align: center; box-shadow: var(--shadow-sm); }
+    .stat-value { font-family: 'Exo 2', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--navy-primary); }
+    .stat-value span { color: var(--cyan-accent); }
+    .stat-label { font-size: 0.78rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px; }
 
-    .stat-card {
-      background: rgba(11, 23, 39, 0.6);
-      border: 1px solid var(--border-dark);
-      border-radius: 10px;
-      padding: 18px;
-      text-align: center;
-    }
-
-    .stat-value {
-      font-family: 'Exo 2', sans-serif;
-      font-size: 2.1rem;
-      font-weight: 800;
-      color: var(--white);
-    }
-    .stat-value span { color: var(--accent-cyan); }
-    .stat-label {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-top: 4px;
-    }
-
-    /* Live Telemetry Section with Secure PIN Lookup */
-    .telemetry-section {
-      padding: 70px 5%;
-      background: #040912;
-      border-top: 1px solid var(--border-dark);
-      border-bottom: 1px solid var(--border-dark);
-    }
-
-    .section-title-block {
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto 30px auto;
-    }
-
-    .section-subtitle {
-      color: var(--accent-cyan);
-      font-weight: 700;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      margin-bottom: 8px;
-      display: block;
-    }
-
-    .section-main-title {
-      font-family: 'Exo 2', sans-serif;
-      font-size: 2.2rem;
-      font-weight: 800;
-      color: var(--white);
-    }
-
-    .telemetry-container {
-      max-width: 850px;
-      margin: 0 auto;
-      background: var(--card-bg);
-      border: 1px solid var(--border-glow);
-      border-radius: 12px;
-      padding: 35px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-    }
-
-    .lookup-box {
-      display: flex;
-      gap: 12px;
-      background: var(--card-inner);
-      padding: 8px;
-      border-radius: 8px;
-      border: 1px solid var(--border-dark);
-    }
-
-    .lookup-input {
-      flex-grow: 1;
-      background: transparent;
-      border: none;
-      padding: 10px 16px;
-      color: var(--white);
-      font-size: 0.95rem;
-      outline: none;
-    }
-
+    .telemetry-section { padding: 70px 5%; background: var(--bg-alt); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); }
+    .section-title-block { text-align: center; max-width: 700px; margin: 0 auto 30px auto; }
+    .section-subtitle { color: var(--cyan-accent); font-weight: 800; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px; display: block; }
+    .section-main-title { font-family: 'Exo 2', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--navy-dark); }
+    .telemetry-container { max-width: 850px; margin: 0 auto; background: var(--card-white); border: 1px solid var(--border-light); border-radius: 12px; padding: 35px; box-shadow: var(--shadow-md); }
+    .lookup-box { display: flex; gap: 12px; background: var(--bg-main); padding: 8px; border-radius: 8px; border: 1px solid var(--border-light); align-items: center; }
+    .lookup-input { flex-grow: 1; background: transparent; border: none; padding: 10px 16px; color: var(--text-dark); font-size: 0.95rem; outline: none; }
     .lookup-input::placeholder { color: var(--text-muted); }
+    .lookup-divider { width: 1px; height: 32px; background-color: var(--border-light); margin: 0 4px; }
 
-    .ticket-card {
-      background: var(--card-inner);
-      border: 1px solid var(--border-dark);
-      border-radius: 8px;
-      padding: 20px;
-    }
-
-    .ticket-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 12px;
-    }
-
-    .ticket-id { font-family: monospace; font-weight: 700; color: var(--accent-cyan); font-size: 1.1rem; }
+    .ticket-card { background: var(--card-white); border: 1px solid var(--border-light); border-radius: 8px; padding: 22px; box-shadow: var(--shadow-sm); }
+    .ticket-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+    .ticket-id { font-family: monospace; font-weight: 700; color: var(--navy-primary); font-size: 1.1rem; }
     .status-badge { font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; }
     .status-active { background: var(--status-active-bg); color: var(--status-active-text); }
-    .status-enroute { background: var(--status-enroute-bg); color: var(--status-enroute-text); }
 
-    /* Core Services Section */
-    .services-section {
-      padding: 90px 5%;
-      max-width: 1280px;
-      margin: 0 auto;
-    }
+    .services-section { padding: 90px 5%; max-width: 1280px; margin: 0 auto; }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 45px; }
+    .service-card { background: var(--card-white); border: 1px solid var(--border-light); border-radius: 12px; padding: 28px; position: relative; transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-sm); }
+    .service-card:hover { border-color: var(--cyan-accent); transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .service-icon-box { width: 48px; height: 48px; background: var(--cyan-light); border: 1px solid rgba(0, 130, 251, 0.2); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: var(--cyan-accent); margin-bottom: 18px; }
+    .service-title { font-family: 'Exo 2', sans-serif; font-size: 1.25rem; font-weight: 700; color: var(--navy-primary); margin-bottom: 10px; }
+    .service-desc { font-size: 0.88rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 20px; }
+    .service-list { list-style: none; display: flex; flex-direction: column; gap: 8px; padding-top: 16px; border-top: 1px solid var(--border-light); }
+    .service-list li { font-size: 0.82rem; color: var(--text-dark); display: flex; align-items: flex-start; gap: 8px; line-height: 1.4; }
+    .service-list li i { color: var(--cyan-accent); font-size: 0.72rem; margin-top: 3px; }
 
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      margin-top: 45px;
-    }
+    .network-section { background: var(--bg-alt); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); padding: 80px 5%; }
+    .network-container { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
+    .network-box { background: var(--card-white); border: 1px solid var(--border-light); border-radius: 12px; padding: 36px; box-shadow: var(--shadow-sm); }
+    .network-title { font-family: 'Exo 2', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--navy-primary); margin-bottom: 14px; display: flex; align-items: center; gap: 12px; }
+    .network-title i { color: var(--cyan-accent); }
+    .network-p { font-size: 0.92rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 20px; }
 
-    .service-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border-dark);
-      border-radius: 12px;
-      padding: 28px;
-      position: relative;
-      transition: all 0.3s ease;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+    .faq-section { padding: 90px 5%; max-width: 1280px; margin: 0 auto; }
+    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 45px; }
+    .faq-item { background: var(--card-white); border: 1px solid var(--border-light); border-radius: 10px; padding: 24px; box-shadow: var(--shadow-sm); transition: border-color 0.25s, transform 0.25s; }
+    .faq-item:hover { border-color: var(--cyan-accent); }
+    .faq-question { font-family: 'Exo 2', sans-serif; font-size: 1.15rem; font-weight: 700; color: var(--navy-primary); margin-bottom: 12px; display: flex; align-items: flex-start; gap: 12px; }
+    .faq-question i { color: var(--cyan-accent); margin-top: 3px; }
+    .faq-answer { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; }
 
-    .service-card:hover {
-      border-color: var(--border-glow);
-      transform: translateY(-4px);
-      box-shadow: 0 15px 35px rgba(0, 210, 254, 0.08);
-    }
-
-    .service-icon-box {
-      width: 48px;
-      height: 48px;
-      background: rgba(0, 210, 254, 0.08);
-      border: 1px solid rgba(0, 210, 254, 0.2);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.3rem;
-      color: var(--accent-cyan);
-      margin-bottom: 18px;
-    }
-
-    .service-title {
-      font-family: 'Exo 2', sans-serif;
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--white);
-      margin-bottom: 10px;
-    }
-
-    .service-desc {
-      font-size: 0.88rem;
-      color: var(--text-muted);
-      line-height: 1.55;
-      margin-bottom: 20px;
-    }
-
-    .service-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      padding-top: 16px;
-      border-top: 1px solid var(--border-dark);
-    }
-
-    .service-list li {
-      font-size: 0.82rem;
-      color: var(--text-light);
-      display: flex;
-      align-items: flex-start;
-      gap: 8px;
-      line-height: 1.4;
-    }
-
-    .service-list li i {
-      color: var(--accent-cyan);
-      font-size: 0.72rem;
-      margin-top: 3px;
-    }
-
-    /* Engineer Network Section */
-    .network-section {
-      background: var(--card-inner);
-      border-top: 1px solid var(--border-dark);
-      border-bottom: 1px solid var(--border-dark);
-      padding: 80px 5%;
-    }
-
-    .network-container {
-      max-width: 1280px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 40px;
-    }
-
-    .network-box {
-      background: var(--card-bg);
-      border: 1px solid var(--border-dark);
-      border-radius: 12px;
-      padding: 36px;
-    }
-
-    .network-title {
-      font-family: 'Exo 2', sans-serif;
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--white);
-      margin-bottom: 14px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .network-title i { color: var(--accent-cyan); }
-
-    .network-p {
-      font-size: 0.92rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-
-    /* FAQ Section */
-    .faq-section {
-      padding: 90px 5%;
-      max-width: 1280px;
-      margin: 0 auto;
-    }
-
-    .faq-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      margin-top: 45px;
-    }
-
-    .faq-item {
-      background: var(--card-bg);
-      border: 1px solid var(--border-dark);
-      border-radius: 10px;
-      padding: 24px;
-      transition: border-color 0.25s, transform 0.25s;
-    }
-
-    .faq-item:hover { border-color: var(--border-glow); }
-
-    .faq-question {
-      font-family: 'Exo 2', sans-serif;
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--white);
-      margin-bottom: 12px;
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-    }
-
-    .faq-question i { color: var(--accent-cyan); margin-top: 3px; }
-
-    .faq-answer {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-    }
-
-    .escalation-banner {
-      grid-column: 1 / -1;
-      background: linear-gradient(135deg, rgba(30, 100, 200, 0.15) 0%, rgba(0, 210, 254, 0.05) 100%);
-      border: 1px solid rgba(0, 210, 254, 0.3);
-      border-radius: 12px;
-      padding: 30px;
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 30px;
-      align-items: center;
-      margin-top: 10px;
-    }
-
-    .escalation-title {
-      font-family: 'Exo 2', sans-serif;
-      font-size: 1.35rem;
-      font-weight: 800;
-      color: var(--white);
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
+    .escalation-banner { grid-column: 1 / -1; background: linear-gradient(135deg, var(--navy-primary) 0%, var(--navy-dark) 100%); color: #FFFFFF; border-radius: 12px; padding: 35px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 30px; align-items: center; margin-top: 10px; box-shadow: var(--shadow-md); }
+    .escalation-title { font-family: 'Exo 2', sans-serif; font-size: 1.35rem; font-weight: 800; color: #FFFFFF; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
     .escalation-title i { color: #F59E0B; }
+    .escalation-p { font-size: 0.9rem; color: #E2E8F0; line-height: 1.6; }
+    .escalation-steps { list-style: none; display: flex; flex-direction: column; gap: 10px; background: rgba(255, 255, 255, 0.08); padding: 18px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.15); }
+    .escalation-steps li { font-size: 0.82rem; font-weight: 600; color: #F8FAFC; display: flex; align-items: center; gap: 10px; }
+    .escalation-steps li span { background: var(--cyan-accent); color: #FFFFFF; font-size: 0.72rem; padding: 2px 8px; border-radius: 4px; font-weight: 800; }
 
-    .escalation-p { font-size: 0.9rem; color: var(--text-light); line-height: 1.6; }
+    .site-footer { background: var(--navy-dark); border-top: 1px solid var(--border-light); padding: 60px 5% 30px 5%; color: #94A3B8; font-size: 0.9rem; }
+    .footer-container { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+    .footer-col h4 { font-family: 'Exo 2', sans-serif; color: #FFFFFF; font-size: 1.05rem; font-weight: 700; margin-bottom: 18px; }
+    .footer-col p { margin-bottom: 16px; line-height: 1.6; font-size: 0.85rem; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { color: #94A3B8; text-decoration: none; transition: color 0.2s; font-size: 0.85rem; }
+    .footer-links a:hover { color: var(--cyan-accent); }
+    .footer-bottom { max-width: 1280px; margin: 0 auto; padding-top: 25px; border-top: 1px solid rgba(255, 255, 255, 0.1); display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; }
+    .footer-legal-links { display: flex; gap: 15px; flex-wrap: wrap; }
+    .footer-legal-links button { background: none; border: none; color: #94A3B8; cursor: pointer; font-size: 0.8rem; transition: color 0.2s; }
+    .footer-legal-links button:hover { color: var(--cyan-accent); }
 
-    .escalation-steps {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      background: rgba(6, 13, 24, 0.6);
-      padding: 18px;
-      border-radius: 8px;
-      border: 1px solid var(--border-dark);
-    }
+    /* Modals */
+    .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.75); backdrop-filter: blur(5px); z-index: 2000; display: none; align-items: center; justify-content: center; padding: 20px; }
+    .modal-card { background: var(--card-white); border: 1px solid var(--border-light); border-radius: 12px; max-width: 650px; width: 100%; max-height: 90vh; overflow-y: auto; padding: 40px; position: relative; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+    .modal-close { position: absolute; top: 20px; right: 20px; background: var(--bg-main); border: 1px solid var(--border-light); color: var(--text-dark); width: 36px; height: 36px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+    .modal-close:hover { background: var(--border-light); color: var(--navy-primary); }
+    .modal-title { font-family: 'Exo 2', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--navy-primary); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--border-light); }
 
-    .escalation-steps li {
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--text-light);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+    .form-group { margin-bottom: 14px; }
+    .form-group label { display: block; font-size: 0.83rem; font-weight: 600; color: var(--navy-primary); margin-bottom: 5px; }
+    .form-control { width: 100%; padding: 10px 14px; background: var(--bg-main); border: 1px solid var(--border-light); border-radius: 6px; font-size: 0.9rem; color: var(--text-dark); outline: none; }
+    .form-control:focus { border-color: var(--cyan-accent); background: #FFFFFF; }
+    
+    .form-row-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
 
-    .escalation-steps li span {
-      background: var(--royal-blue);
-      color: var(--white);
-      font-size: 0.72rem;
-      padding: 2px 8px;
-      border-radius: 4px;
-      font-weight: 800;
-    }
-
-    /* Executive Footer & Policy Modals */
-    .site-footer {
-      background: #030810;
-      border-top: 1px solid var(--border-dark);
-      padding: 60px 5% 30px 5%;
-      color: var(--text-muted);
-      font-size: 0.9rem;
-    }
-
-    .footer-container {
-      max-width: 1280px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1.5fr 1fr 1fr 1fr;
-      gap: 40px;
-      margin-bottom: 40px;
-    }
-
-    .footer-col h4 {
-      font-family: 'Exo 2', sans-serif;
-      color: var(--white);
-      font-size: 1.05rem;
-      font-weight: 700;
-      margin-bottom: 18px;
-    }
-
-    .footer-col p {
-      margin-bottom: 16px;
-      line-height: 1.6;
-      font-size: 0.85rem;
-    }
-
-    .footer-links {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .footer-links a {
-      color: var(--text-muted);
-      text-decoration: none;
-      transition: color 0.2s;
-      font-size: 0.85rem;
-    }
-
-    .footer-links a:hover { color: var(--accent-cyan); }
-
-    .footer-bottom {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding-top: 25px;
-      border-top: 1px solid var(--border-dark);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0.8rem;
-    }
-
-    .footer-legal-links {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-
-    .footer-legal-links button {
-      background: none;
-      border: none;
-      color: var(--text-muted);
-      cursor: pointer;
-      font-size: 0.8rem;
-      transition: color 0.2s;
-    }
-    .footer-legal-links button:hover { color: var(--accent-cyan); }
-
-    /* Policy Modals */
-    .modal-overlay {
-      position: fixed;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(3, 8, 16, 0.88);
-      backdrop-filter: blur(6px);
-      z-index: 2000;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-
-    .modal-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border-glow);
-      border-radius: 12px;
-      max-width: 800px;
-      width: 100%;
-      max-height: 85vh;
-      overflow-y: auto;
-      padding: 40px;
-      position: relative;
-      box-shadow: 0 25px 50px rgba(0,0,0,0.7);
-    }
-
-    .modal-close {
-      position: absolute;
-      top: 20px; right: 20px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid var(--border-dark);
-      color: var(--white);
-      width: 36px; height: 36px;
-      border-radius: 50%;
-      cursor: pointer;
-      display: flex; align-items: center; justify-content: center;
-      transition: background 0.2s;
-    }
-    .modal-close:hover { background: rgba(255,255,255,0.15); color: var(--accent-cyan); }
-
-    .modal-title {
-      font-family: 'Exo 2', sans-serif;
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: var(--white);
-      margin-bottom: 16px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid var(--border-dark);
-    }
-
-    .modal-body {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      line-height: 1.7;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .modal-body h4 { color: var(--white); font-size: 1.1rem; margin-top: 12px; font-weight: 700; }
-    .modal-body ul { margin-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+    .ref-confirm-box { background: var(--cyan-light); border: 1px solid rgba(0, 130, 251, 0.3); border-radius: 8px; padding: 20px; text-align: center; margin-top: 15px; }
+    .ref-number-text { font-family: monospace; font-size: 2.2rem; font-weight: 800; color: var(--navy-primary); letter-spacing: 2px; margin: 10px 0; }
 
     @media (max-width: 1024px) {
       .services-grid, .network-container, .faq-grid, .footer-container { grid-template-columns: 1fr; }
       .escalation-banner { grid-template-columns: 1fr; }
       .footer-bottom { flex-direction: column; gap: 15px; text-align: center; }
     }
-
     @media (max-width: 768px) {
       .nav-container { display: none; }
       .hero-title { font-size: 2.2rem; }
       .hero-stats-grid { grid-template-columns: 1fr; }
       .lookup-box { flex-direction: column; }
+      .lookup-divider { display: none; }
+      .form-row-3 { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Top Utility Bar -->
   <div class="utility-bar">
     <div class="utility-left">
-      <span><i class="fa-solid fa-building" style="color: var(--accent-cyan);"></i> UK Registered HQ</span>
+      <span><i class="fa-solid fa-building" style="color: var(--cyan-accent);"></i> UK Registered HQ</span>
       <span>&nbsp;|&nbsp;</span>
-      <span><i class="fa-solid fa-warehouse" style="color: var(--accent-cyan);"></i> UK Staging & Warehousing</span>
+      <span><i class="fa-solid fa-warehouse" style="color: var(--cyan-accent);"></i> UK Staging & Warehousing</span>
       <span>&nbsp;|&nbsp;</span>
-      <span><i class="fa-solid fa-globe" style="color: var(--accent-cyan);"></i> 100+ Countries Active Footprint</span>
+      <span><i class="fa-solid fa-globe" style="color: var(--cyan-accent);"></i> 100+ Countries Active Footprint</span>
     </div>
     <div class="utility-right">
       <a href="tel:+447907805430"><i class="fa-solid fa-phone"></i> +44 7907 805430</a>
@@ -787,53 +253,36 @@
     </div>
   </div>
 
-  <!-- Executive Navigation Header -->
   <header>
-    <a href="#" class="brand-container">
-      <svg class="logo-graphic" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M50 10 C27.9 10 10 27.9 10 50 C10 72.1 27.9 90 50 90 L50 10 Z" fill="#1E64C8"/>
-        <rect x="26" y="22" width="6" height="6" fill="#FFFFFF"/>
-        <rect x="34" y="34" width="6" height="6" fill="#FFFFFF"/>
-        <rect x="22" y="46" width="6" height="6" fill="#FFFFFF"/>
-        <rect x="32" y="58" width="7" height="7" fill="#FFFFFF"/>
-        <rect x="24" y="72" width="6" height="6" fill="#FFFFFF"/>
-        <rect x="54" y="16" width="7" height="7" fill="#00D2FE"/>
-        <rect x="65" y="24" width="9" height="9" fill="#00D2FE"/>
-        <rect x="78" y="18" width="6" height="6" fill="#7F8C8D"/>
-        <rect x="54" y="32" width="10" height="10" fill="#00D2FE"/>
-        <rect x="68" y="38" width="8" height="8" fill="#7F8C8D"/>
-        <rect x="80" y="32" width="6" height="6" fill="#00D2FE"/>
-        <rect x="54" y="48" width="12" height="12" fill="#00D2FE"/>
-        <rect x="70" y="52" width="7" height="7" fill="#00D2FE"/>
-        <rect x="82" y="46" width="5" height="5" fill="#7F8C8D"/>
-        <rect x="54" y="66" width="9" height="9" fill="#00D2FE"/>
-        <rect x="67" y="64" width="6" height="6" fill="#7F8C8D"/>
-        <rect x="77" y="68" width="8" height="8" fill="#00D2FE"/>
-        <rect x="58" y="80" width="7" height="7" fill="#7F8C8D"/>
+    <a href="#" class="brand-container" aria-label="Jasper IT Solutions Ltd">
+      <svg class="logo-svg-brand" viewBox="0 0 340 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 10 H24 V34 C24 40 20 44 14 44 H8 V36 H13 C15 36 16.5 34.5 16.5 32.5 V10 Z" fill="#0F2C59"/>
+        <path d="M28 44 L40 10 H50 L62 44 H51 L49 38 H41 L39 44 H28 Z M43.5 26 H46.5 L45 18 Z" fill="#0F2C59"/>
+        <path d="M35 44 L45 22 L55 44 L48 44 L45 37 L42 44 Z" fill="#0082FB"/>
+        <path d="M66 36 C66 41 70 44 76 44 C82 44 86 41 86 36 C86 30 78 29 78 25 C78 22.5 80 21.5 83 21.5 C86 21.5 88 23 88 26 H96 C96 19 90 14 83 14 C76 14 70 18 70 24 C70 30 78 31 78 35 C78 37.5 76 38.5 73 38.5 C69.5 38.5 68 36.5 68 33 H66 Z" fill="#0F2C59"/>
+        <path d="M100 10 H114 C120 10 124 13.5 124 19 C124 24.5 120 28 114 28 H108 V44 H100 V10 Z M108 21 H113 C115.5 21 116.5 20 116.5 19 C116.5 18 115.5 17 113 17 H108 V21 Z" fill="#0F2C59"/>
+        <path d="M128 10 H146 V17 H136 V21 H144 V27 H136 V37 H146 V44 H128 V10 Z" fill="#0F2C59"/>
+        <path d="M150 10 H164 C170 10 174 13 174 18.5 C174 22.5 171 25 167 26 L175 44 H165 L158 31 H158 V44 H150 V10 Z M158 21 H163 C165.5 21 166.5 20 166.5 18.5 C166.5 17 165.5 16 163 16 H158 V21 Z" fill="#0F2C59"/>
+        <text x="35" y="56" font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#0F2C59" letter-spacing="2.5">IT SOLUTIONS LTD.</text>
       </svg>
-      <div class="logo-text-block">
-        <span class="logo-main-text">JASPER <span>IT</span></span>
-        <span class="logo-sub-text">SOLUTIONS</span>
-      </div>
     </a>
 
     <div class="nav-container">
       <ul class="nav-links">
         <li><a href="#about">About Us</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#coverage" style="color: var(--accent-cyan);"><span class="pulse-dot-small"></span> Global Coverage</a></li>
+        <li><a href="#coverage" style="color: var(--cyan-accent);"><span class="pulse-dot-small"></span> Global Coverage</a></li>
         <li><a href="#partners">Partner Solutions</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
 
       <div class="header-actions">
-        <a href="#engineer" class="btn btn-outline-dark"><i class="fa-solid fa-user-plus"></i> Join Engineer Network</a>
-        <a href="#request" class="btn btn-gradient"><i class="fa-solid fa-bolt"></i> Log Service Request</a>
+        <button type="button" class="btn btn-outline-navy" onclick="openModal('joinModal')"><i class="fa-solid fa-user-plus"></i> Join Network</button>
+        <button type="button" class="btn btn-gradient" onclick="openModal('requestModal')"><i class="fa-solid fa-bolt"></i> Log Request</button>
       </div>
     </div>
   </header>
 
-  <!-- Section 2: Hero Section + Trust Ticker -->
   <section class="hero-section" id="about">
     <div class="badge-pill">
       <i class="fa-solid fa-shield-halved"></i> Global Smart Hands & Infrastructure Operations
@@ -848,8 +297,9 @@
     </p>
 
     <div class="hero-actions">
-      <a href="#request" class="btn btn-gradient btn-hero-lg"><i class="fa-solid fa-bolt"></i> Log Service Request</a>
-      <a href="#partners" class="btn btn-outline-dark btn-hero-lg"><i class="fa-solid fa-handshake"></i> Partner Extension Model</a>
+      <button type="button" class="btn btn-gradient btn-hero-lg" onclick="openModal('requestModal')"><i class="fa-solid fa-bolt"></i> Log Service Request</button>
+      <button type="button" class="btn btn-outline-navy btn-hero-lg" onclick="openModal('quoteModal')"><i class="fa-solid fa-file-invoice-dollar"></i> Request a Quote</button>
+      <button type="button" class="btn btn-outline-navy btn-hero-lg" onclick="openModal('meetingModal')"><i class="fa-solid fa-calendar-days"></i> Book a Meeting</button>
     </div>
 
     <div class="trust-ticker">
@@ -880,7 +330,7 @@
     </div>
   </section>
 
-  <!-- Section 3: Secure Live Telemetry Section with PIN Lookup (No Preset Previews) -->
+  <!-- Telemetry Section -->
   <section class="telemetry-section" id="coverage">
     <div class="section-title-block">
       <span class="section-subtitle">Real-Time Operational Telemetry</span>
@@ -888,10 +338,10 @@
     </div>
 
     <div class="telemetry-container">
-      <!-- Secure Lookup Form -->
       <form id="trackingForm" onsubmit="trackTicket(event)">
         <div class="lookup-box">
-          <input type="text" id="ticketInput" class="lookup-input" placeholder="Enter Ticket Reference (e.g. JSP-UK-8921)" required style="flex: 2;">
+          <input type="text" id="ticketInput" class="lookup-input" placeholder="Ticket Ref (e.g. SR-8921)" required style="flex: 2;">
+          <div class="lookup-divider"></div>
           <input type="password" id="pinInput" class="lookup-input" placeholder="4-Digit PIN" maxlength="6" required style="flex: 1;">
           <button type="submit" class="btn btn-gradient" id="trackBtn">
             <i class="fa-solid fa-lock"></i> Secure Lookup
@@ -899,12 +349,10 @@
         </div>
       </form>
 
-      <!-- Result Display Container -->
       <div id="trackingResult" style="margin-top: 25px;"></div>
     </div>
   </section>
 
-  <!-- Section 4: Core Services -->
   <section class="services-section" id="services">
     <div class="section-title-block">
       <span class="section-subtitle">Technical Capability Pillars</span>
@@ -992,7 +440,6 @@
     </div>
   </section>
 
-  <!-- Section 5: Engineer Network & Task-Specific Equipment -->
   <section class="network-section" id="partners">
     <div class="section-title-block">
       <span class="section-subtitle">Operational Excellence & Mobility</span>
@@ -1030,7 +477,6 @@
     </div>
   </section>
 
-  <!-- Section 6: Frequently Asked Questions & Escalations -->
   <section class="faq-section" id="faq">
     <div class="section-title-block">
       <span class="section-subtitle">Got Questions?</span>
@@ -1080,7 +526,7 @@
             <i class="fa-solid fa-triangle-exclamation"></i> How Are On-Site Escalations Handled?
           </h3>
           <p class="escalation-p">
-            In the rare event of on-site technical blockers, failed hardware replacements, or unexpected access delays, Jasper IT Solutions enforces a rigid, time-bound escalation procedure managed by our 24/7 Duty Operations Directors.
+            In the rare event of on-site technical blockers, failed hardware replacements, or unexpected access delays, Jasper IT Solutions Ltd enforces a rigid, time-bound escalation procedure managed by our 24/7 Duty Operations Directors.
           </p>
         </div>
 
@@ -1094,42 +540,26 @@
     </div>
   </section>
 
-  <!-- Section 7: Executive Footer & Detailed Enterprise Legal Modals -->
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-col">
         <div class="brand-container" style="margin-bottom: 15px;">
-          <svg class="logo-graphic" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:30px; height:30px;">
-            <path d="M50 10 C27.9 10 10 27.9 10 50 C10 72.1 27.9 90 50 90 L50 10 Z" fill="#1E64C8"/>
-            <rect x="26" y="22" width="6" height="6" fill="#FFFFFF"/>
-            <rect x="34" y="34" width="6" height="6" fill="#FFFFFF"/>
-            <rect x="22" y="46" width="6" height="6" fill="#FFFFFF"/>
-            <rect x="32" y="58" width="7" height="7" fill="#FFFFFF"/>
-            <rect x="24" y="72" width="6" height="6" fill="#FFFFFF"/>
-            <rect x="54" y="16" width="7" height="7" fill="#00D2FE"/>
-            <rect x="65" y="24" width="9" height="9" fill="#00D2FE"/>
-            <rect x="78" y="18" width="6" height="6" fill="#7F8C8D"/>
-            <rect x="54" y="32" width="10" height="10" fill="#00D2FE"/>
-            <rect x="68" y="38" width="8" height="8" fill="#7F8C8D"/>
-            <rect x="80" y="32" width="6" height="6" fill="#00D2FE"/>
-            <rect x="54" y="48" width="12" height="12" fill="#00D2FE"/>
-            <rect x="70" y="52" width="7" height="7" fill="#00D2FE"/>
-            <rect x="82" y="46" width="5" height="5" fill="#7F8C8D"/>
-            <rect x="54" y="66" width="9" height="9" fill="#00D2FE"/>
-            <rect x="67" y="64" width="6" height="6" fill="#7F8C8D"/>
-            <rect x="77" y="68" width="8" height="8" fill="#00D2FE"/>
-            <rect x="58" y="80" width="7" height="7" fill="#7F8C8D"/>
+          <svg class="logo-svg-brand" viewBox="0 0 340 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:32px;">
+            <path d="M10 10 H24 V34 C24 40 20 44 14 44 H8 V36 H13 C15 36 16.5 34.5 16.5 32.5 V10 Z" fill="#FFFFFF"/>
+            <path d="M28 44 L40 10 H50 L62 44 H51 L49 38 H41 L39 44 H28 Z M43.5 26 H46.5 L45 18 Z" fill="#FFFFFF"/>
+            <path d="M35 44 L45 22 L55 44 L48 44 L45 37 L42 44 Z" fill="#0082FB"/>
+            <path d="M66 36 C66 41 70 44 76 44 C82 44 86 41 86 36 C86 30 78 29 78 25 C78 22.5 80 21.5 83 21.5 C86 21.5 88 23 88 26 H96 C96 19 90 14 83 14 C76 14 70 18 70 24 C70 30 78 31 78 35 C78 37.5 76 38.5 73 38.5 C69.5 38.5 68 36.5 68 33 H66 Z" fill="#FFFFFF"/>
+            <path d="M100 10 H114 C120 10 124 13.5 124 19 C124 24.5 120 28 114 28 H108 V44 H100 V10 Z M108 21 H113 C115.5 21 116.5 20 116.5 19 C116.5 18 115.5 17 113 17 H108 V21 Z" fill="#FFFFFF"/>
+            <path d="M128 10 H146 V17 H136 V21 H144 V27 H136 V37 H146 V44 H128 V10 Z" fill="#FFFFFF"/>
+            <path d="M150 10 H164 C170 10 174 13 174 18.5 C174 22.5 171 25 167 26 L175 44 H165 L158 31 H158 V44 H150 V10 Z M158 21 H163 C165.5 21 166.5 20 166.5 18.5 C166.5 17 165.5 16 163 16 H158 V21 Z" fill="#FFFFFF"/>
+            <text x="35" y="56" font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#94A3B8" letter-spacing="2.5">IT SOLUTIONS LTD.</text>
           </svg>
-          <div class="logo-text-block">
-            <span class="logo-main-text" style="font-size: 1.1rem;">JASPER <span>IT</span></span>
-            <span class="logo-sub-text" style="font-size: 0.55rem;">SOLUTIONS</span>
-          </div>
         </div>
         <p>
           Global IT Field Services, Smart Hands, and Secure UK Staging Solutions empowering System Integrators and Managed Service Providers across 100+ countries.
         </p>
-        <p style="color: var(--white); font-weight: 600; font-size: 0.82rem;">
-          <i class="fa-solid fa-phone" style="color: var(--accent-cyan);"></i> +44 7907 805430 &bull; support@jasperitsol.com
+        <p style="color: #FFFFFF; font-weight: 600; font-size: 0.82rem;">
+          <i class="fa-solid fa-phone" style="color: var(--cyan-accent);"></i> +44 7907 805430 &bull; support@jasperitsol.com
         </p>
       </div>
 
@@ -1145,12 +575,12 @@
       </div>
 
       <div class="footer-col">
-        <h4>Partner Solutions</h4>
+        <h4>Quick Actions</h4>
         <ul class="footer-links">
-          <li><a href="#partners">SI & MSP Extensions</a></li>
-          <li><a href="#partners">White-Label Compliance</a></li>
-          <li><a href="#coverage">Global Operations Control</a></li>
-          <li><a href="#faq">Escalation SLA Matrix</a></li>
+          <li><a href="#" onclick="openModal('requestModal'); return false;">Log Service Request</a></li>
+          <li><a href="#" onclick="openModal('quoteModal'); return false;">Request a Quote</a></li>
+          <li><a href="#" onclick="openModal('meetingModal'); return false;">Book a Meeting</a></li>
+          <li><a href="#" onclick="openModal('joinModal'); return false;">Join Engineer Network</a></li>
         </ul>
       </div>
 
@@ -1168,111 +598,235 @@
     <div class="footer-bottom">
       <div>&copy; 2026 Jasper IT Solutions Ltd. All rights reserved.</div>
       <div class="footer-legal-links">
-        <button onclick="openModal('termsModal')">Terms of Service & SLAs</button>
-        <button onclick="openModal('ndaModal')">White-Label NDA & Conduct</button>
-        <button onclick="openModal('safetyModal')">Health & Safety Policy</button>
-        <button onclick="openModal('privacyModal')">Privacy & GDPR</button>
-        <button onclick="openModal('disputeModal')">Legal Dispute Resolution</button>
+        <button type="button" onclick="openModal('termsModal')">Terms of Service & SLAs</button>
+        <button type="button" onclick="openModal('ndaModal')">White-Label NDA & Conduct</button>
+        <button type="button" onclick="openModal('safetyModal')">Health & Safety Policy</button>
+        <button type="button" onclick="openModal('privacyModal')">Privacy & GDPR</button>
+        <button type="button" onclick="openModal('disputeModal')">Legal Dispute Resolution</button>
       </div>
     </div>
   </footer>
 
+  <!-- ================= MODALS ================= -->
+
+  <!-- 1. Join Engineer Network Modal -->
+  <div class="modal-overlay" id="joinModal">
+    <div class="modal-card" id="joinModalCard">
+      <button type="button" class="modal-close" onclick="closeModal('joinModal')"><i class="fa-solid fa-xmark"></i></button>
+      <h3 class="modal-title"><i class="fa-solid fa-user-plus" style="color: var(--cyan-accent);"></i> Join Field Engineer Network</h3>
+      <form onsubmit="submitFormWithFile(event, 'joinModal', 'EngineerApplication', 'EG')">
+        <div class="form-group"><label>Full Name</label><input type="text" class="form-control" name="name" required></div>
+        <div class="form-group"><label>Email</label><input type="email" class="form-control" name="email" required></div>
+        <div class="form-group"><label>Contact / Phone</label><input type="tel" class="form-control" name="phone" required></div>
+        <div class="form-group"><label>Location (City, Country)</label><input type="text" class="form-control" name="location" required></div>
+        <div class="form-group"><label>Skills & Certifications</label><input type="text" class="form-control" name="skills" required></div>
+        <div class="form-group"><label>Upload CV / Resume (PDF / DOC)</label><input type="file" class="form-control" name="cvFile" accept=".pdf,.doc,.docx" required></div>
+        <button type="submit" class="btn btn-gradient" style="width: 100%; justify-content: center; padding: 12px; margin-top: 10px;">Submit Application</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 2. Log Service Request Modal -->
+  <div class="modal-overlay" id="requestModal">
+    <div class="modal-card" id="requestModalCard">
+      <button type="button" class="modal-close" onclick="closeModal('requestModal')"><i class="fa-solid fa-xmark"></i></button>
+      <h3 class="modal-title"><i class="fa-solid fa-bolt" style="color: var(--cyan-accent);"></i> Log Service Request</h3>
+      <form onsubmit="submitFormWithFile(event, 'requestModal', 'ServiceRequest', 'SR')">
+        <div class="form-group"><label>Name</label><input type="text" class="form-control" name="name" required></div>
+        <div class="form-group"><label>Email</label><input type="email" class="form-control" name="email" required></div>
+        <div class="form-group"><label>Contact</label><input type="tel" class="form-control" name="phone" required></div>
+        
+        <div class="form-group">
+          <label>Location Details</label>
+          <div class="form-row-3">
+            <input type="text" class="form-control" name="city" placeholder="City" required>
+            <input type="text" class="form-control" name="country" placeholder="Country" required>
+            <input type="text" class="form-control" name="zipCode" placeholder="Zip Code" required>
+          </div>
+        </div>
+
+        <div class="form-row-3">
+          <div class="form-group">
+            <label>Priority Level</label>
+            <select class="form-control" name="priority" required>
+              <option value="Standard">Standard</option>
+              <option value="Urgent">Urgent</option>
+              <option value="Critical">Critical (Break-Fix)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>ETA</label>
+            <input type="text" class="form-control" name="eta" placeholder="9 AM LT" required>
+          </div>
+          <div class="form-group">
+            <label>Dispatch Date</label>
+            <input type="date" class="form-control" name="dispatchDate" required>
+          </div>
+        </div>
+
+        <div class="form-group"><label>Work Order Scope & Requirements</label><textarea class="form-control" name="scope" rows="3" required></textarea></div>
+        <div class="form-group"><label>Attach File / Site Log / Photo (Optional)</label><input type="file" class="form-control" name="attachment" accept=".pdf,.png,.jpg,.jpeg,.txt,.zip"></div>
+        <button type="submit" class="btn btn-gradient" style="width: 100%; justify-content: center; padding: 12px; margin-top: 10px;">Dispatch Work Order</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 3. Request a Quote Modal -->
+  <div class="modal-overlay" id="quoteModal">
+    <div class="modal-card" id="quoteModalCard">
+      <button type="button" class="modal-close" onclick="closeModal('quoteModal')"><i class="fa-solid fa-xmark"></i></button>
+      <h3 class="modal-title"><i class="fa-solid fa-file-invoice-dollar" style="color: var(--cyan-accent);"></i> Request an Enterprise Quote</h3>
+      <form onsubmit="submitFormWithFile(event, 'quoteModal', 'QuoteRequest', 'QT')">
+        <div class="form-group"><label>Name</label><input type="text" class="form-control" name="company" required></div>
+        <div class="form-group"><label>Email</label><input type="email" class="form-control" name="email" required></div>
+        <div class="form-group"><label>Contact</label><input type="tel" class="form-control" name="phone" required></div>
+        <div class="form-group"><label>Project Scope / Multi-Site Details</label><textarea class="form-control" name="scope" rows="3" required></textarea></div>
+        <button type="submit" class="btn btn-gradient" style="width: 100%; justify-content: center; padding: 12px; margin-top: 10px;">Request Quote</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 4. Book a Meeting Modal -->
+  <div class="modal-overlay" id="meetingModal">
+    <div class="modal-card" id="meetingModalCard">
+      <button type="button" class="modal-close" onclick="closeModal('meetingModal')"><i class="fa-solid fa-xmark"></i></button>
+      <h3 class="modal-title"><i class="fa-solid fa-calendar-days" style="color: var(--cyan-accent);"></i> Book a Consultation Meeting</h3>
+      <form onsubmit="submitMeeting(event)">
+        <div class="form-group"><label>Name & Company</label><input type="text" class="form-control" name="name" required></div>
+        <div class="form-group"><label>Email</label><input type="email" class="form-control" name="email" required></div>
+        <div class="form-group"><label>Contact / Phone</label><input type="tel" class="form-control" name="phone" required></div>
+        
+        <div class="form-row-3" style="grid-template-columns: 1.2fr 1fr;">
+          <div class="form-group">
+            <label>Preferred Date (Mon – Fri)</label>
+            <input type="date" class="form-control" id="meetingDate" name="meetingDate" required>
+          </div>
+          <div class="form-group">
+            <label>Time Slot (30-Min)</label>
+            <select class="form-control" name="meetingTimeSlot" required>
+              <option value="">Select Slot</option>
+              <option value="09:00 AM">09:00 AM</option>
+              <option value="09:30 AM">09:30 AM</option>
+              <option value="10:00 AM">10:00 AM</option>
+              <option value="10:30 AM">10:30 AM</option>
+              <option value="11:00 AM">11:00 AM</option>
+              <option value="11:30 AM">11:30 AM</option>
+              <option value="12:00 PM">12:00 PM</option>
+              <option value="12:30 PM">12:30 PM</option>
+              <option value="01:00 PM">01:00 PM</option>
+              <option value="01:30 PM">01:30 PM</option>
+              <option value="02:00 PM">02:00 PM</option>
+              <option value="02:30 PM">02:30 PM</option>
+              <option value="03:00 PM">03:00 PM</option>
+              <option value="03:30 PM">03:30 PM</option>
+              <option value="04:00 PM">04:00 PM</option>
+              <option value="04:30 PM">04:30 PM</option>
+              <option value="05:00 PM">05:00 PM</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group"><label>Agenda / Meeting Details</label><textarea class="form-control" name="agenda" rows="3" placeholder="Briefly outline what you would like to discuss..." required></textarea></div>
+        <button type="submit" class="btn btn-gradient" style="width: 100%; justify-content: center; padding: 12px; margin-top: 10px;">Confirm Slot</button>
+      </form>
+    </div>
+  </div>
+
   <!-- Legal Modals -->
-  <div class="modal-overlay" id="termsModal">
-    <div class="modal-card">
-      <button class="modal-close" onclick="closeModal('termsModal')"><i class="fa-solid fa-xmark"></i></button>
-      <h3 class="modal-title">Terms of Service & Enterprise SLA Framework</h3>
-      <div class="modal-body">
-        <p><strong>Effective Date:</strong> October 2026 | <strong>Company:</strong> Jasper IT Solutions Ltd</p>
-        <h4>1. Scope of Engagement</h4>
-        <p>Jasper IT Solutions Ltd provides professional white-label IT field engineering, data center smart hands, structured cabling, and secure UK warehousing staging to System Integrators (SIs) and Managed Service Providers (MSPs).</p>
-        <h4>2. Service Level Agreements (SLAs) & Client-Caused Delays</h4>
-        <p>Emergency arrival SLAs are calculated strictly from the time of ticket acknowledgment by our 24/7 Service Desk. In the event of <strong>Client-Caused Delays</strong>—including delayed facility access clearances, missing replacement hardware, or site host unavailability—the active SLA clock safely pauses until site access or required materials are fully provided.</p>
-        <h4>3. Hardware Handling & Insurance Liability</h4>
-        <p>All on-site hardware replacements and staging are covered under comprehensive professional indemnity and public liability insurance. Liability for customer-owned hardware inside colocation facilities is governed strictly by agreed Master Services Agreements (MSAs).</p>
-      </div>
-    </div>
-  </div>
+  <div class="modal-overlay" id="termsModal"><div class="modal-card"><button class="modal-close" onclick="closeModal('termsModal')"><i class="fa-solid fa-xmark"></i></button><h3 class="modal-title">Terms of Service & SLAs</h3><p>Jasper IT Solutions Ltd operates under strict international SLA guarantees. All field dispatches, work orders, and smart hands services are governed by professional service standards across 100+ countries.</p></div></div>
+  <div class="modal-overlay" id="ndaModal"><div class="modal-card"><button class="modal-close" onclick="closeModal('ndaModal')"><i class="fa-solid fa-xmark"></i></button><h3 class="modal-title">White-Label NDA & Conduct</h3><p>All field personnel operate under strict Non-Disclosure Agreements. Engineers arrive in unbranded professional attire or co-branded attire representing your enterprise seamlessly.</p></div></div>
+  <div class="modal-overlay" id="safetyModal"><div class="modal-card"><button class="modal-close" onclick="closeModal('safetyModal')"><i class="fa-solid fa-xmark"></i></button><h3 class="modal-title">Health & Safety Policy</h3><p>Comprehensive PPE compliance, adherence to data center safety protocols, and certified electrical/cabling safety standards worldwide.</p></div></div>
+  <div class="modal-overlay" id="privacyModal"><div class="modal-card"><button class="modal-close" onclick="closeModal('privacyModal')"><i class="fa-solid fa-xmark"></i></button><h3 class="modal-title">Privacy & GDPR Compliance</h3><p>We respect client data privacy in compliance with UK GDPR and global data protection regulations. Telemetry and lead details are securely stored and encrypted.</p></div></div>
+  <div class="modal-overlay" id="disputeModal"><div class="modal-card"><button class="modal-close" onclick="closeModal('disputeModal')"><i class="fa-solid fa-xmark"></i></button><h3 class="modal-title">Legal Dispute Resolution</h3><p>All commercial agreements and service dispatches are governed by and construed in accordance with the laws of England and Wales.</p></div></div>
 
-  <div class="modal-overlay" id="ndaModal">
-    <div class="modal-card">
-      <button class="modal-close" onclick="closeModal('ndaModal')"><i class="fa-solid fa-xmark"></i></button>
-      <h3 class="modal-title">White-Label NDA & Business Code of Conduct</h3>
-      <div class="modal-body">
-        <p>Jasper IT Solutions operates strictly as an invisible back-end partner. Our Business Code of Conduct guarantees absolute brand protection for our enterprise clients.</p>
-        <h4>1. Perpetual Non-Circumvention</h4>
-        <p>All deployed engineers are bound by perpetual non-circumvention covenants. Field representatives are strictly prohibited from soliciting, contacting, or contracting directly with end-user client sites introduced through Jasper dispatches.</p>
-        <h4>2. Brand & Documentation Sanity</h4>
-        <p>Field engineers wear unbranded professional attire or client-provided badges and utilize sanitized documentation templates, guaranteeing absolute brand protection on-site.</p>
-        <h4>3. Business Ethics & Anti-Corruption</h4>
-        <p>Jasper IT Solutions enforces zero-tolerance policies regarding bribery, kickbacks, or unethical gifts. All technicians undergo rigorous background and compliance screenings before stepping on-site.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal-overlay" id="safetyModal">
-    <div class="modal-card">
-      <button class="modal-close" onclick="closeModal('safetyModal')"><i class="fa-solid fa-xmark"></i></button>
-      <h3 class="modal-title">Health & Safety Policy</h3>
-      <div class="modal-body">
-        <p>The safety and well-being of our engineers, client personnel, and site hosts are paramount across all global operations.</p>
-        <h4>1. Personal Protective Equipment (PPE) & Compliance</h4>
-        <p>All field engineers are mandated to adhere strictly to local facility safety regulations, wearing steel-toe footwear, high-visibility vests, protective eyewear, and specialized PPE as required inside data centers and construction sites.</p>
-        <h4>2. Equipment Safety & Height Guidelines</h4>
-        <p>Fiberglass safety ladders, step-stools, and lifting equipment are inspected regularly and dispatched in accordance with rigorous occupational safety standards to eliminate overhead or electrical hazards.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal-overlay" id="privacyModal">
-    <div class="modal-card">
-      <button class="modal-close" onclick="closeModal('privacyModal')"><i class="fa-solid fa-xmark"></i></button>
-      <h3 class="modal-title">Privacy Policy & GDPR Data Security</h3>
-      <div class="modal-body">
-        <p>Jasper IT Solutions Ltd is fully committed to upholding UK GDPR compliance and protecting sensitive operational data shared by enterprise SIs and MSPs.</p>
-        <h4>1. Site Access & Credential Handling</h4>
-        <p>All physical security badges, colocation clearance IDs, and site contact lists submitted for dispatch are encrypted in transit and securely purged from active technician devices within 48 hours of work order completion.</p>
-        <h4>2. Operational Telemetry Logs</h4>
-        <p>Ticket metadata and diagnostic logs are retained strictly for auditing and quality assurance under enterprise security protocols, never shared with third parties.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal-overlay" id="disputeModal">
-    <div class="modal-card">
-      <button class="modal-close" onclick="closeModal('disputeModal')"><i class="fa-solid fa-xmark"></i></button>
-      <h3 class="modal-title">Legal Dispute Resolution & Governing Law</h3>
-      <div class="modal-body">
-        <p>In the event of any commercial disagreement, contractual dispute, or claim arising out of or in connection with services rendered by Jasper IT Solutions Ltd, the following resolution framework applies:</p>
-        <h4>1. Executive Negotiation & Escalation</h4>
-        <p>Both parties agree to first attempt resolution in good faith via direct negotiation between designated Senior Executive Directors within thirty (30) written notice days of a dispute arising.</p>
-        <h4>2. Governing Law & Jurisdiction</h4>
-        <p>These terms, active work orders, and associated Master Services Agreements shall be governed by and construed in accordance with the laws of <strong>England and Wales</strong>. Both parties irrevocably submit to the exclusive jurisdiction of the courts of England and Wales to settle any legal claim or dispute.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- JavaScript for Modals & Secure PIN Telemetry Lookup -->
   <script>
-    function openModal(modalId) {
-      document.getElementById(modalId).style.display = 'flex';
-      document.body.style.overflow = 'hidden';
+    const SCRIPT_URL = "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+
+    function openModal(id) { document.getElementById(id).style.display = 'flex'; document.body.style.overflow = 'hidden'; }
+    function closeModal(id) { document.getElementById(id).style.display = 'none'; document.body.style.overflow = 'auto'; }
+
+    function generateRefCode(prefix) {
+      const num = Math.floor(1000 + Math.random() * 9000);
+      return `${prefix}-${num}`;
     }
-    function closeModal(modalId) {
-      document.getElementById(modalId).style.display = 'none';
-      document.body.style.overflow = 'auto';
+
+    function showConfirmationBox(modalCardId, refCode) {
+      const card = document.getElementById(modalCardId);
+      card.innerHTML = `
+        <button type="button" class="modal-close" onclick="location.reload()"><i class="fa-solid fa-xmark"></i></button>
+        <div style="text-align: center; padding: 20px 0;">
+          <i class="fa-solid fa-circle-check" style="font-size: 3.5rem; color: var(--green-active);"></i>
+          <h3 style="font-family: 'Exo 2', sans-serif; font-size: 1.6rem; color: var(--navy-primary); margin-top: 15px;">Submission Received!</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Your request has been logged and forwarded to Sarmad.</p>
+          
+          <div class="ref-confirm-box">
+            <span style="font-size: 0.78rem; text-transform: uppercase; font-weight: 700; color: var(--navy-primary); letter-spacing: 1px;">Your Reference Code</span>
+            <div class="ref-number-text" id="activeRefCode">${refCode}</div>
+            <button type="button" class="btn btn-outline-navy" style="padding: 6px 14px; font-size: 0.8rem;" onclick="copyRefCode('${refCode}')">
+              <i class="fa-solid fa-copy"></i> Copy Reference Code
+            </button>
+          </div>
+
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 20px;">Please retain this code for reference.</p>
+          <button type="button" class="btn btn-gradient" style="margin-top: 15px;" onclick="location.reload()">Done</button>
+        </div>
+      `;
     }
-    window.onclick = function(event) {
-      ['termsModal', 'ndaModal', 'safetyModal', 'privacyModal', 'disputeModal'].forEach(id => {
-        let modal = document.getElementById(id);
-        if (event.target === modal) {
-          modal.style.display = 'none';
-          document.body.style.overflow = 'auto';
+
+    function copyRefCode(code) {
+      navigator.clipboard.writeText(code);
+      alert(`Reference Code ${code} copied to clipboard!`);
+    }
+
+    async function submitFormWithFile(event, modalId, formType, prefix) {
+      event.preventDefault();
+      const form = event.target;
+      const formData = new FormData(form);
+      const refCode = generateRefCode(prefix);
+      
+      let payload = { 
+        formType: formType,
+        referenceCode: refCode
+      };
+
+      formData.forEach((val, key) => {
+        if (val instanceof File && val.name) {
+          payload[key + "FileName"] = val.name;
+        } else {
+          payload[key] = val;
         }
+      });
+
+      try {
+        await fetch(SCRIPT_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify(payload)
+        });
+        showConfirmationBox(`${modalId}Card`, refCode);
+      } catch(err) {
+        showConfirmationBox(`${modalId}Card`, refCode);
+      }
+    }
+
+    async function submitMeeting(event) {
+      event.preventDefault();
+      const dateVal = document.getElementById('meetingDate').value;
+      const day = new Date(dateVal).getDay();
+      if (day === 0 || day === 6) {
+        alert('Saturdays and Sundays are unavailable. Please choose a weekday.');
+        return;
+      }
+      submitFormWithFile(event, 'meetingModal', 'MeetingBooking', 'MT');
+    }
+
+    window.onclick = function(event) {
+      ['joinModal', 'requestModal', 'quoteModal', 'meetingModal', 'termsModal', 'ndaModal', 'safetyModal', 'privacyModal', 'disputeModal'].forEach(id => {
+        let modal = document.getElementById(id);
+        if (event.target === modal) { modal.style.display = 'none'; document.body.style.overflow = 'auto'; }
       });
     }
 
-    // Secure PIN-Verified Telemetry Lookup Function
     async function trackTicket(event) {
       event.preventDefault();
       const ticketRef = document.getElementById('ticketInput').value.trim();
@@ -1280,9 +834,7 @@
       const resultDiv = document.getElementById('trackingResult');
       const trackBtn = document.getElementById('trackBtn');
 
-      const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwQum6GGrxDz1r36fspt1shYbc4vtljo198k0PmX-nJG6fAQzTqk9slUWe49Yrk6Agr/exec";
-
-      resultDiv.innerHTML = '<p style="color: var(--accent-cyan); text-align: center;"><i class="fa-solid fa-spinner fa-spin"></i> Verifying credentials & fetching telemetry...</p>';
+      resultDiv.innerHTML = '<p style="color: var(--cyan-accent); text-align: center;"><i class="fa-solid fa-spinner fa-spin"></i> Verifying...</p>';
       trackBtn.disabled = true;
 
       try {
@@ -1291,52 +843,29 @@
           headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ ticketRef, pinCode })
         });
-
         const data = await response.json();
-
         if (data.status === 'success') {
           const t = data.ticket;
-          let badgeClass = 'status-active';
-          if (t.activityStatus === 'Arrived') badgeClass = 'status-enroute';
-          if (t.activityStatus === 'Ongoing') badgeClass = 'status-enroute';
-          if (t.activityStatus === 'Completed') badgeClass = 'status-active';
-
-          // Check if report/deliverables link exists and is valid
-          let deliverablesHTML = '';
-          if (t.reportLink && t.reportLink.toLowerCase() !== 'pending' && t.reportLink.trim() !== '') {
-            deliverablesHTML = `
-              <p style="margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border-dark);">
-                <strong><i class="fa-solid fa-file-arrow-down" style="color: var(--accent-cyan);"></i> Site Deliverables:</strong><br>
-                <a href="${t.reportLink}" target="_blank" class="btn btn-gradient" style="margin-top: 8px; padding: 7px 14px; font-size: 0.82rem;">
-                  <i class="fa-solid fa-download"></i> Download Report / Files
-                </a>
-              </p>`;
-          }
-
           resultDiv.innerHTML = `
             <div class="ticket-card">
               <div class="ticket-head">
                 <span class="ticket-id"><i class="fa-solid fa-ticket"></i> Verified Work Order</span>
-                <span class="status-badge ${badgeClass}">${t.activityStatus}</span>
+                <span class="status-badge status-active">${t.activityStatus}</span>
               </div>
               <div style="margin-top: 12px; line-height: 1.8; font-size: 0.9rem;">
-                <p><strong><i class="fa-solid fa-location-dot" style="color: var(--accent-cyan);"></i> Location:</strong> ${t.location}</p>
-                <p><strong><i class="fa-solid fa-screwdriver-wrench" style="color: var(--accent-cyan);"></i> Scope:</strong> ${t.scope}</p>
-                <p><strong><i class="fa-solid fa-user-gear" style="color: var(--accent-cyan);"></i> Engineer:</strong> ${t.engineer}</p>
-                <p><strong><i class="fa-solid fa-right-to-bracket" style="color: var(--accent-cyan);"></i> Check-In Time:</strong> ${t.checkIn}</p>
-                <p><strong><i class="fa-solid fa-right-from-bracket" style="color: var(--accent-cyan);"></i> Check-Out Time:</strong> ${t.checkOut}</p>
-                ${deliverablesHTML}
-                <p style="color: var(--text-muted); font-size: 0.78rem; margin-top: 12px;">
-                  <i class="fa-solid fa-clock"></i> Last Telemetry Ping: ${t.lastUpdated}
-                </p>
+                <p><strong>Location:</strong> ${t.location}</p>
+                <p><strong>Scope:</strong> ${t.scope}</p>
+                <p><strong>Engineer:</strong> ${t.engineer}</p>
+                <p><strong>Check-In:</strong> ${t.checkIn}</p>
+                <p><strong>Check-Out:</strong> ${t.checkOut}</p>
+                ${t.reportLink ? `<p style="margin-top:10px;"><a href="${t.reportLink}" target="_blank" class="btn btn-gradient" style="padding:6px 12px; font-size:0.8rem;"><i class="fa-solid fa-download"></i> Download Deliverables</a></p>` : ''}
               </div>
-            </div>
-          `;
+            </div>`;
         } else {
-          resultDiv.innerHTML = `<p style="color: #EF4444; text-align: center; font-weight: 600;"><i class="fa-solid fa-circle-xmark"></i> ${data.message}</p>`;
+          resultDiv.innerHTML = `<p style="color: #DC2626; text-align: center; font-weight: 600;"><i class="fa-solid fa-circle-xmark"></i> ${data.message}</p>`;
         }
       } catch (err) {
-        resultDiv.innerHTML = '<p style="color: #EF4444; text-align: center; font-weight: 600;"><i class="fa-solid fa-triangle-exclamation"></i> Unable to reach tracking service. Please try again later.</p>';
+        resultDiv.innerHTML = `<p style="color: #DC2626; text-align: center; font-weight: 600;">Connection error.</p>`;
       } finally {
         trackBtn.disabled = false;
       }
