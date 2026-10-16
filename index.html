@@ -3,33 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jasper IT Solutions Ltd | Global IT Field Services & White-Label Smart Hands</title>
+  <title>Jasper IT Solutions Ltd | L1 & L2 On-Site IT Support & Smart Hands</title>
   
-  <meta name="description" content="Enterprise IT field services, data center smart hands, structured cabling, and UK hardware staging across 100+ countries. Partner with Jasper IT Solutions Ltd.">
-  <meta name="keywords" content="global smart hands, data center IT field services, UK hardware staging, structured cabling, Ekahau Wi-Fi survey, white-label IT support, MSP field partner">
+  <meta name="description" content="Reliable on-site IT support, L1 and L2 field services, and data center smart hands for MSPs and IT service providers across 100+ countries.">
   <meta name="author" content="Jasper IT Solutions Ltd">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Jasper IT Solutions Ltd",
-    "url": "https://www.jasperitsol.com",
-    "logo": "https://www.jasperitsol.com/assets/logo.png",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+44-7907-805430",
-      "contactType": "customer service",
-      "areaServed": "Global",
-      "availableLanguage": ["English"]
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "GB",
-      "addressLocality": "London"
-    }
-  }
-  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,28 +29,12 @@
       --green-active: #059669;
       --status-active-bg: #D1FAE5;
       --status-active-text: #065F46;
-      --status-enroute-bg: #FEF3C7;
-      --status-enroute-text: #92400E;
       --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08);
       --shadow-md: 0 10px 25px -5px rgba(15, 44, 89, 0.1), 0 8px 10px -6px rgba(15, 44, 89, 0.05);
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
     body { background-color: var(--bg-main); color: var(--text-dark); line-height: 1.6; overflow-x: hidden; scroll-behavior: smooth; }
-
-    .utility-bar {
-      background: var(--navy-dark);
-      color: #94A3B8;
-      padding: 8px 5%;
-      font-size: 0.8rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    .utility-bar a { color: #F1F5F9; text-decoration: none; font-weight: 500; transition: color 0.2s; }
-    .utility-bar a:hover { color: var(--cyan-accent); }
-    .utility-left, .utility-right { display: flex; align-items: center; gap: 18px; }
 
     header {
       background: var(--card-white);
@@ -88,22 +49,16 @@
       box-shadow: var(--shadow-sm);
     }
 
-    .brand-container {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      flex-shrink: 0;
-      margin-right: 25px;
-    }
-
-    .logo-svg-brand { height: 42px; width: auto; display: block; }
+    .brand-container { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; margin-right: 25px; cursor: pointer; }
+    .brand-logo-img { height: 40px; width: auto; display: block; object-fit: contain; }
+    .brand-fallback-text { font-family: 'Exo 2', sans-serif; font-size: 1.25rem; font-weight: 800; color: var(--navy-primary); display: flex; align-items: center; gap: 6px; }
+    .brand-fallback-text span { color: var(--cyan-accent); }
 
     .nav-container { display: flex; align-items: center; flex-grow: 1; justify-content: space-between; }
     .nav-links { display: flex; gap: 24px; list-style: none; align-items: center; font-weight: 600; font-size: 0.88rem; }
-    .nav-links a { color: var(--navy-primary); text-decoration: none; transition: all 0.2s ease; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+    .nav-links a { color: var(--navy-primary); text-decoration: none; transition: all 0.2s ease; display: flex; align-items: center; gap: 6px; white-space: nowrap; cursor: pointer; }
     .nav-links a:hover { color: var(--cyan-accent); }
     
-    .pulse-dot-small { width: 7px; height: 7px; background: var(--green-active); border-radius: 50%; box-shadow: 0 0 8px var(--green-active); display: inline-block; }
     .header-actions { display: flex; align-items: center; gap: 12px; flex-shrink: 0; margin-left: 20px; }
 
     .btn {
@@ -121,33 +76,67 @@
       transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0, 130, 251, 0.3);
     }
 
-    .hero-section { padding: 80px 5% 70px 5%; max-width: 1280px; margin: 0 auto; text-align: center; position: relative; }
-    .badge-pill {
-      display: inline-flex; align-items: center; gap: 8px; background: var(--cyan-light); border: 1px solid rgba(0, 130, 251, 0.25);
-      padding: 6px 16px; border-radius: 30px; font-size: 0.82rem; font-weight: 700; color: var(--navy-primary); margin-bottom: 24px; text-transform: uppercase; letter-spacing: 0.5px;
-    }
-    .hero-title { font-family: 'Exo 2', sans-serif; font-size: 3.2rem; font-weight: 800; color: var(--navy-dark); line-height: 1.15; margin-bottom: 20px; letter-spacing: -0.5px; max-width: 950px; margin-left: auto; margin-right: auto; }
+    /* Hero Section */
+    .hero-section { padding: 60px 5% 70px 5%; max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; }
+    .hero-subtitle { color: var(--cyan-accent); font-weight: 800; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 12px; display: block; }
+    .hero-title { font-family: 'Exo 2', sans-serif; font-size: 2.8rem; font-weight: 800; color: var(--navy-dark); line-height: 1.18; margin-bottom: 18px; letter-spacing: -0.5px; }
     .hero-title span { color: var(--cyan-accent); }
-    .hero-description { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 36px; line-height: 1.6; max-width: 780px; margin-left: auto; margin-right: auto; }
-    .hero-actions { display: flex; gap: 16px; justify-content: center; align-items: center; margin-bottom: 45px; flex-wrap: wrap; }
-    .btn-hero-lg { padding: 14px 28px; font-size: 0.98rem; }
+    .hero-description { font-size: 1.05rem; color: var(--text-muted); margin-bottom: 28px; line-height: 1.6; }
+    .hero-actions { display: flex; gap: 14px; align-items: center; margin-bottom: 22px; flex-wrap: wrap; }
+    .hero-link-track { font-size: 0.85rem; color: var(--navy-primary); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+    .hero-link-track:hover { color: var(--cyan-accent); text-decoration: underline; }
 
-    .trust-ticker { display: flex; justify-content: center; align-items: center; gap: 30px; margin-bottom: 45px; font-size: 0.82rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; flex-wrap: wrap; }
-    .trust-ticker span { display: flex; align-items: center; gap: 8px; color: var(--navy-primary); font-weight: 700; }
-    .trust-ticker i { color: var(--cyan-accent); }
+    .hero-image-card { position: relative; border-radius: 14px; overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--border-light); background: #000; }
+    .hero-image-card img { width: 100%; height: auto; display: block; object-fit: cover; opacity: 0.9; }
+    
+    .hero-floating-badge { position: absolute; right: 20px; top: 20px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); padding: 16px; border-radius: 10px; box-shadow: var(--shadow-md); display: flex; flex-direction: column; gap: 10px; border: 1px solid var(--border-light); min-width: 170px; }
+    .floating-item { display: flex; align-items: center; gap: 8px; font-size: 0.78rem; font-weight: 700; color: var(--navy-primary); }
+    .floating-item i { color: var(--cyan-accent); font-size: 0.9rem; }
 
-    .hero-stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding-top: 36px; border-top: 1px solid var(--border-light); max-width: 1100px; margin: 0 auto; }
-    .stat-card { background: var(--card-white); border: 1px solid var(--border-light); border-radius: 10px; padding: 20px; text-align: center; box-shadow: var(--shadow-sm); }
-    .stat-value { font-family: 'Exo 2', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--navy-primary); }
-    .stat-value span { color: var(--cyan-accent); }
-    .stat-label { font-size: 0.78rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px; }
-
-    .telemetry-section { padding: 70px 5%; background: var(--bg-alt); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); }
-    .section-title-block { text-align: center; max-width: 700px; margin: 0 auto 30px auto; }
+    /* Services Section */
+    .services-section { padding: 80px 5%; background: var(--bg-alt); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); }
+    .section-title-block { text-align: center; max-width: 700px; margin: 0 auto 40px auto; }
     .section-subtitle { color: var(--cyan-accent); font-weight: 800; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px; display: block; }
     .section-main-title { font-family: 'Exo 2', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--navy-dark); }
-    .telemetry-container { max-width: 850px; margin: 0 auto; background: var(--card-white); border: 1px solid var(--border-light); border-radius: 12px; padding: 35px; box-shadow: var(--shadow-md); }
-    .lookup-box { display: flex; gap: 12px; background: var(--bg-main); padding: 8px; border-radius: 8px; border: 1px solid var(--border-light); align-items: center; }
+    
+    .services-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 1280px; margin: 0 auto; }
+    .service-card-clean { background: var(--card-white); border: 1px solid var(--border-light); border-radius: 10px; padding: 26px 20px; transition: all 0.25s ease; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-sm); }
+    .service-card-clean:hover { border-color: var(--cyan-accent); transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .service-icon-box { width: 44px; height: 44px; background: var(--cyan-light); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: var(--cyan-accent); margin-bottom: 16px; }
+    .service-title { font-family: 'Exo 2', sans-serif; font-size: 1.15rem; font-weight: 700; color: var(--navy-primary); margin-bottom: 8px; }
+    .service-desc { font-size: 0.84rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 16px; }
+    .service-card-clean a { font-size: 0.8rem; font-weight: 700; color: var(--cyan-accent); text-decoration: none; display: inline-flex; align-items: center; gap: 4px; cursor: pointer; }
+
+    /* How It Works Section */
+    .workflow-section { padding: 90px 5%; max-width: 1280px; margin: 0 auto; }
+    .workflow-grid-split { display: grid; grid-template-columns: 1fr 1.3fr; gap: 40px; align-items: center; margin-top: 40px; }
+    .workflow-image-box { border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--border-light); }
+    .workflow-image-box img { width: 100%; height: auto; display: block; object-fit: cover; }
+    
+    .workflow-steps-list { display: flex; flex-direction: column; gap: 20px; }
+    .workflow-step-item { display: flex; gap: 16px; align-items: flex-start; background: var(--card-white); padding: 18px; border-radius: 10px; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); }
+    .step-number-circle { width: 34px; height: 34px; background: var(--cyan-light); color: var(--cyan-accent); font-weight: 800; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem; }
+    .step-content h4 { font-family: 'Exo 2', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--navy-primary); margin-bottom: 4px; }
+    .step-content p { font-size: 0.83rem; color: var(--text-muted); line-height: 1.5; }
+
+    /* Who We Support Section */
+    .support-section { padding: 80px 5%; background: var(--bg-alt); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); }
+    .support-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 1280px; margin-top: 35px; }
+    .support-card { background: var(--card-white); border: 1px solid var(--border-light); border-radius: 10px; padding: 22px; box-shadow: var(--shadow-sm); }
+    .support-card h4 { font-family: 'Exo 2', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--navy-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+    .support-card h4 i { color: var(--cyan-accent); font-size: 1rem; }
+    .support-card p { font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; }
+
+    /* Mid-Page CTA Banner */
+    .cta-banner-mid { background: linear-gradient(135deg, #EBF5FF 0%, #D1E9FF 100%); border: 1px solid rgba(0, 130, 251, 0.25); border-radius: 12px; padding: 40px 5%; max-width: 1280px; margin: 80px auto; display: flex; justify-content: space-between; align-items: center; box-shadow: var(--shadow-sm); }
+    .cta-banner-text h3 { font-family: 'Exo 2', sans-serif; font-size: 1.6rem; font-weight: 800; color: var(--navy-primary); margin-bottom: 6px; }
+    .cta-banner-text p { font-size: 0.92rem; color: var(--text-muted); }
+    .cta-banner-actions { display: flex; gap: 12px; }
+
+    /* Telemetry / Tracking Section */
+    .telemetry-section { padding: 75px 5%; background: var(--card-white); border-bottom: 1px solid var(--border-light); }
+    .telemetry-container { max-width: 850px; margin: 0 auto; background: var(--bg-main); border: 1px solid var(--border-light); border-radius: 12px; padding: 35px; box-shadow: var(--shadow-md); }
+    .lookup-box { display: flex; gap: 12px; background: var(--card-white); padding: 8px; border-radius: 8px; border: 1px solid var(--border-light); align-items: center; }
     .lookup-input { flex-grow: 1; background: transparent; border: none; padding: 10px 16px; color: var(--text-dark); font-size: 0.95rem; outline: none; }
     .lookup-input::placeholder { color: var(--text-muted); }
     .lookup-divider { width: 1px; height: 32px; background-color: var(--border-light); margin: 0 4px; }
@@ -158,51 +147,20 @@
     .status-badge { font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; }
     .status-active { background: var(--status-active-bg); color: var(--status-active-text); }
 
-    .services-section { padding: 90px 5%; max-width: 1280px; margin: 0 auto; }
-    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 45px; }
-    .service-card { background: var(--card-white); border: 1px solid var(--border-light); border-radius: 12px; padding: 28px; position: relative; transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-sm); }
-    .service-card:hover { border-color: var(--cyan-accent); transform: translateY(-4px); box-shadow: var(--shadow-md); }
-    .service-icon-box { width: 48px; height: 48px; background: var(--cyan-light); border: 1px solid rgba(0, 130, 251, 0.2); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: var(--cyan-accent); margin-bottom: 18px; }
-    .service-title { font-family: 'Exo 2', sans-serif; font-size: 1.25rem; font-weight: 700; color: var(--navy-primary); margin-bottom: 10px; }
-    .service-desc { font-size: 0.88rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 20px; }
-    .service-list { list-style: none; display: flex; flex-direction: column; gap: 8px; padding-top: 16px; border-top: 1px solid var(--border-light); }
-    .service-list li { font-size: 0.82rem; color: var(--text-dark); display: flex; align-items: flex-start; gap: 8px; line-height: 1.4; }
-    .service-list li i { color: var(--cyan-accent); font-size: 0.72rem; margin-top: 3px; }
-
-    .network-section { background: var(--bg-alt); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); padding: 80px 5%; }
-    .network-container { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
-    .network-box { background: var(--card-white); border: 1px solid var(--border-light); border-radius: 12px; padding: 36px; box-shadow: var(--shadow-sm); }
-    .network-title { font-family: 'Exo 2', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--navy-primary); margin-bottom: 14px; display: flex; align-items: center; gap: 12px; }
-    .network-title i { color: var(--cyan-accent); }
-    .network-p { font-size: 0.92rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 20px; }
-
-    .faq-section { padding: 90px 5%; max-width: 1280px; margin: 0 auto; }
-    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 45px; }
-    .faq-item { background: var(--card-white); border: 1px solid var(--border-light); border-radius: 10px; padding: 24px; box-shadow: var(--shadow-sm); transition: border-color 0.25s, transform 0.25s; }
-    .faq-item:hover { border-color: var(--cyan-accent); }
-    .faq-question { font-family: 'Exo 2', sans-serif; font-size: 1.15rem; font-weight: 700; color: var(--navy-primary); margin-bottom: 12px; display: flex; align-items: flex-start; gap: 12px; }
-    .faq-question i { color: var(--cyan-accent); margin-top: 3px; }
-    .faq-answer { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; }
-
-    .escalation-banner { grid-column: 1 / -1; background: linear-gradient(135deg, var(--navy-primary) 0%, var(--navy-dark) 100%); color: #FFFFFF; border-radius: 12px; padding: 35px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 30px; align-items: center; margin-top: 10px; box-shadow: var(--shadow-md); }
-    .escalation-title { font-family: 'Exo 2', sans-serif; font-size: 1.35rem; font-weight: 800; color: #FFFFFF; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
-    .escalation-title i { color: #F59E0B; }
-    .escalation-p { font-size: 0.9rem; color: #E2E8F0; line-height: 1.6; }
-    .escalation-steps { list-style: none; display: flex; flex-direction: column; gap: 10px; background: rgba(255, 255, 255, 0.08); padding: 18px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.15); }
-    .escalation-steps li { font-size: 0.82rem; font-weight: 600; color: #F8FAFC; display: flex; align-items: center; gap: 10px; }
-    .escalation-steps li span { background: var(--cyan-accent); color: #FFFFFF; font-size: 0.72rem; padding: 2px 8px; border-radius: 4px; font-weight: 800; }
-
+    /* Footer */
     .site-footer { background: var(--navy-dark); border-top: 1px solid var(--border-light); padding: 60px 5% 30px 5%; color: #94A3B8; font-size: 0.9rem; }
     .footer-container { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
     .footer-col h4 { font-family: 'Exo 2', sans-serif; color: #FFFFFF; font-size: 1.05rem; font-weight: 700; margin-bottom: 18px; }
     .footer-col p { margin-bottom: 16px; line-height: 1.6; font-size: 0.85rem; }
     .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-    .footer-links a { color: #94A3B8; text-decoration: none; transition: color 0.2s; font-size: 0.85rem; }
+    .footer-links a { color: #94A3B8; text-decoration: none; transition: color 0.2s; font-size: 0.85rem; cursor: pointer; }
     .footer-links a:hover { color: var(--cyan-accent); }
     .footer-bottom { max-width: 1280px; margin: 0 auto; padding-top: 25px; border-top: 1px solid rgba(255, 255, 255, 0.1); display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; }
     .footer-legal-links { display: flex; gap: 15px; flex-wrap: wrap; }
     .footer-legal-links button { background: none; border: none; color: #94A3B8; cursor: pointer; font-size: 0.8rem; transition: color 0.2s; }
     .footer-legal-links button:hover { color: var(--cyan-accent); }
+    .footer-logo-text { font-family: 'Exo 2', sans-serif; color: #FFFFFF; font-size: 1.2rem; font-weight: 800; }
+    .footer-logo-text span { color: var(--cyan-accent); }
 
     /* Modals */
     .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.75); backdrop-filter: blur(5px); z-index: 2000; display: none; align-items: center; justify-content: center; padding: 20px; }
@@ -222,14 +180,13 @@
     .ref-number-text { font-family: monospace; font-size: 2.2rem; font-weight: 800; color: var(--navy-primary); letter-spacing: 2px; margin: 10px 0; }
 
     @media (max-width: 1024px) {
-      .services-grid, .network-container, .faq-grid, .footer-container { grid-template-columns: 1fr; }
-      .escalation-banner { grid-template-columns: 1fr; }
+      .hero-section, .workflow-grid-split, .services-grid-4, .support-grid-4, .footer-container { grid-template-columns: 1fr 1fr; }
+      .cta-banner-mid { flex-direction: column; gap: 20px; text-align: center; }
       .footer-bottom { flex-direction: column; gap: 15px; text-align: center; }
     }
     @media (max-width: 768px) {
       .nav-container { display: none; }
-      .hero-title { font-size: 2.2rem; }
-      .hero-stats-grid { grid-template-columns: 1fr; }
+      .hero-section, .services-grid-4, .support-grid-4, .workflow-grid-split { grid-template-columns: 1fr; }
       .lookup-box { flex-direction: column; }
       .lookup-divider { display: none; }
       .form-row-3 { grid-template-columns: 1fr; }
@@ -238,103 +195,205 @@
 </head>
 <body>
 
-  <div class="utility-bar">
-    <div class="utility-left">
-      <span><i class="fa-solid fa-building" style="color: var(--cyan-accent);"></i> UK Registered HQ</span>
-      <span>&nbsp;|&nbsp;</span>
-      <span><i class="fa-solid fa-warehouse" style="color: var(--cyan-accent);"></i> UK Staging & Warehousing</span>
-      <span>&nbsp;|&nbsp;</span>
-      <span><i class="fa-solid fa-globe" style="color: var(--cyan-accent);"></i> 100+ Countries Active Footprint</span>
-    </div>
-    <div class="utility-right">
-      <a href="tel:+447907805430"><i class="fa-solid fa-phone"></i> +44 7907 805430</a>
-      <span>&nbsp;|&nbsp;</span>
-      <a href="mailto:support@jasperitsol.com"><i class="fa-solid fa-envelope"></i> support@jasperitsol.com</a>
-    </div>
-  </div>
-
   <header>
     <a href="#" class="brand-container" aria-label="Jasper IT Solutions Ltd">
-      <svg class="logo-svg-brand" viewBox="0 0 340 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10 10 H24 V34 C24 40 20 44 14 44 H8 V36 H13 C15 36 16.5 34.5 16.5 32.5 V10 Z" fill="#0F2C59"/>
-        <path d="M28 44 L40 10 H50 L62 44 H51 L49 38 H41 L39 44 H28 Z M43.5 26 H46.5 L45 18 Z" fill="#0F2C59"/>
-        <path d="M35 44 L45 22 L55 44 L48 44 L45 37 L42 44 Z" fill="#0082FB"/>
-        <path d="M66 36 C66 41 70 44 76 44 C82 44 86 41 86 36 C86 30 78 29 78 25 C78 22.5 80 21.5 83 21.5 C86 21.5 88 23 88 26 H96 C96 19 90 14 83 14 C76 14 70 18 70 24 C70 30 78 31 78 35 C78 37.5 76 38.5 73 38.5 C69.5 38.5 68 36.5 68 33 H66 Z" fill="#0F2C59"/>
-        <path d="M100 10 H114 C120 10 124 13.5 124 19 C124 24.5 120 28 114 28 H108 V44 H100 V10 Z M108 21 H113 C115.5 21 116.5 20 116.5 19 C116.5 18 115.5 17 113 17 H108 V21 Z" fill="#0F2C59"/>
-        <path d="M128 10 H146 V17 H136 V21 H144 V27 H136 V37 H146 V44 H128 V10 Z" fill="#0F2C59"/>
-        <path d="M150 10 H164 C170 10 174 13 174 18.5 C174 22.5 171 25 167 26 L175 44 H165 L158 31 H158 V44 H150 V10 Z M158 21 H163 C165.5 21 166.5 20 166.5 18.5 C166.5 17 165.5 16 163 16 H158 V21 Z" fill="#0F2C59"/>
-        <text x="35" y="56" font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#0F2C59" letter-spacing="2.5">IT SOLUTIONS LTD.</text>
-      </svg>
+      <img src="Jasper IT Solutions logo (1).svg" alt="Jasper IT Solutions Logo" class="brand-logo-img" onerror="this.style.display='none'; document.getElementById('fallbackLogo').style.display='flex';">
+      <div id="fallbackLogo" class="brand-fallback-text" style="display:none;"><i class="fa-solid fa-server" style="color:var(--cyan-accent);"></i> JASPER <span>IT</span></div>
     </a>
 
     <div class="nav-container">
       <ul class="nav-links">
-        <li><a href="#about">About Us</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#coverage" style="color: var(--cyan-accent);"><span class="pulse-dot-small"></span> Global Coverage</a></li>
-        <li><a href="#partners">Partner Solutions</a></li>
-        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#workflow">How It Works</a></li>
+        <li><a href="#support">Who We Support</a></li>
+        <li><a href="#telemetry">Track Work Order</a></li>
       </ul>
 
       <div class="header-actions">
-        <button type="button" class="btn btn-outline-navy" onclick="openModal('joinModal')"><i class="fa-solid fa-user-plus"></i> Join Network</button>
-        <button type="button" class="btn btn-gradient" onclick="openModal('requestModal')"><i class="fa-solid fa-bolt"></i> Log Request</button>
+        <button type="button" class="btn btn-outline-navy" onclick="openModal('joinModal')"><i class="fa-solid fa-user-plus"></i> Join Engineer Network</button>
+        <button type="button" class="btn btn-gradient" onclick="openModal('requestModal')"><i class="fa-solid fa-bolt"></i> Request a Service Quote</button>
       </div>
     </div>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero-section" id="about">
-    <div class="badge-pill">
-      <i class="fa-solid fa-shield-halved"></i> Global Smart Hands & Infrastructure Operations
+    <div>
+      <span class="hero-subtitle">L1 & L2 IT FIELD SERVICES</span>
+      <h1 class="hero-title">
+        Reliable On-Site IT Support for <span>MSPs and IT Service Providers</span>
+      </h1>
+      <p class="hero-description">
+        When remote support is not enough, Jasper IT Solutions helps bring technical assistance directly to the end-user site. We provide coordinated on-site IT field services, with a primary focus on Level 1 support, backed by Level 2 assistance for more complex issues.
+      </p>
+      <div class="hero-actions">
+        <button type="button" class="btn btn-gradient" onclick="openModal('requestModal')"><i class="fa-solid fa-bolt"></i> Request a Service Quote</button>
+        <button type="button" class="btn btn-outline-navy" onclick="openModal('joinModal')"><i class="fa-solid fa-user-plus"></i> Join Our Engineer Network</button>
+      </div>
+      <a href="#telemetry" class="hero-link-track"><i class="fa-solid fa-arrow-right"></i> Already have a work order? Track its status.</a>
     </div>
 
-    <h1 class="hero-title">
-      White-Label IT Field Services for <span>Global SIs & MSPs</span>
-    </h1>
-
-    <p class="hero-description">
-      Deploy certified L1–L3 Smart Hands, data center engineering, structured fiber cabling, and multi-site retail hardware rollouts across 100+ countries under strict SLA guarantees.
-    </p>
-
-    <div class="hero-actions">
-      <button type="button" class="btn btn-gradient btn-hero-lg" onclick="openModal('requestModal')"><i class="fa-solid fa-bolt"></i> Log Service Request</button>
-      <button type="button" class="btn btn-outline-navy btn-hero-lg" onclick="openModal('quoteModal')"><i class="fa-solid fa-file-invoice-dollar"></i> Request a Quote</button>
-      <button type="button" class="btn btn-outline-navy btn-hero-lg" onclick="openModal('meetingModal')"><i class="fa-solid fa-calendar-days"></i> Book a Meeting</button>
-    </div>
-
-    <div class="trust-ticker">
-      <span><i class="fa-solid fa-circle-check"></i> Equinix & Digital Realty Cleared</span>
-      <span>&bull;</span>
-      <span><i class="fa-solid fa-circle-check"></i> 100% White-Label NDA Compliant</span>
-      <span>&bull;</span>
-      <span><i class="fa-solid fa-circle-check"></i> Sub-30 Min Ticket Acknowledgment</span>
-    </div>
-
-    <div class="hero-stats-grid">
-      <div class="stat-card">
-        <div class="stat-value">99<span>%</span></div>
-        <div class="stat-label">SLA & Work Order Success Rate</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-value">5,000<span>+</span></div>
-        <div class="stat-label">Vetted Field Engineers</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-value">100<span>+</span></div>
-        <div class="stat-label">Countries Active Footprint</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-value">24<span>/7</span></div>
-        <div class="stat-label">Central Service Desk</div>
+    <div class="hero-image-card">
+      <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80" alt="Field Engineer Working on IT Hardware">
+      <div class="hero-floating-badge">
+        <div class="floating-item"><i class="fa-solid fa-circle-check"></i> L1 Focused <span style="display:block; font-size:0.7rem; color:var(--text-muted); font-weight:400;">Practical on-site support</span></div>
+        <div class="floating-item"><i class="fa-solid fa-circle-check"></i> L2 Escalation <span style="display:block; font-size:0.7rem; color:var(--text-muted); font-weight:400;">For complex issues</span></div>
+        <div class="floating-item"><i class="fa-solid fa-circle-check"></i> Multi-Site Ready <span style="display:block; font-size:0.7rem; color:var(--text-muted); font-weight:400;">Rollouts & projects</span></div>
       </div>
     </div>
   </section>
 
-  <!-- Telemetry Section -->
-  <section class="telemetry-section" id="coverage">
+  <!-- Core Services Section -->
+  <section class="services-section" id="services">
     <div class="section-title-block">
-      <span class="section-subtitle">Real-Time Operational Telemetry</span>
-      <h2 class="section-main-title">Global Operations Control Center</h2>
+      <span class="section-subtitle">OUR SERVICES</span>
+      <h2 class="section-main-title">Built Around Practical IT Field Support</h2>
+      <p style="color: var(--text-muted); font-size: 0.92rem; margin-top: 8px;">From everyday troubleshooting to multi-site projects, we provide the right support at the right time.</p>
+    </div>
+
+    <div class="services-grid-4">
+      <div class="service-card-clean">
+        <div>
+          <div class="service-icon-box"><i class="fa-solid fa-laptop"></i></div>
+          <h3 class="service-title">L1 IT Field Support</h3>
+          <p class="service-desc">Workstation support, hardware replacement, peripherals and break-fix.</p>
+        </div>
+        <a onclick="openModal('requestModal')">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+
+      <div class="service-card-clean">
+        <div>
+          <div class="service-icon-box"><i class="fa-solid fa-gears"></i></div>
+          <h3 class="service-title">L2 IT Field Support</h3>
+          <p class="service-desc">Advanced troubleshooting, network and infrastructure support.</p>
+        </div>
+        <a onclick="openModal('requestModal')">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+
+      <div class="service-card-clean">
+        <div>
+          <div class="service-icon-box"><i class="fa-solid fa-server"></i></div>
+          <h3 class="service-title">Smart Hands & Infrastructure</h3>
+          <p class="service-desc">Rack-and-stack, equipment checks, cable tracing and more.</p>
+        </div>
+        <a onclick="openModal('requestModal')">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+
+      <div class="service-card-clean">
+        <div>
+          <div class="service-icon-box"><i class="fa-solid fa-network-wired"></i></div>
+          <h3 class="service-title">Rollouts & Multi-Site Projects</h3>
+          <p class="service-desc">Coordinated deployments, IMAC and repeatable site visits.</p>
+        </div>
+        <a onclick="openModal('requestModal')">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="workflow-section" id="workflow">
+    <div class="section-title-block">
+      <span class="section-subtitle">HOW IT WORKS</span>
+      <h2 class="section-main-title">A Clear Process from Request to Report</h2>
+      <p style="color: var(--text-muted); font-size: 0.92rem; margin-top: 8px;">We handle the coordination, so you can focus on your customers.</p>
+    </div>
+
+    <div class="workflow-grid-split">
+      <div class="workflow-image-box">
+        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Engineer Professional at Work">
+      </div>
+
+      <div class="workflow-steps-list">
+        <div class="workflow-step-item">
+          <div class="step-number-circle">01</div>
+          <div class="step-content">
+            <h4>Submit Request</h4>
+            <p>Provide site details, task and timing.</p>
+          </div>
+        </div>
+
+        <div class="workflow-step-item">
+          <div class="step-number-circle">02</div>
+          <div class="step-content">
+            <h4>Review & Clarify</h4>
+            <p>Confirm scope, availability and terms.</p>
+          </div>
+        </div>
+
+        <div class="workflow-step-item">
+          <div class="step-number-circle">03</div>
+          <div class="step-content">
+            <h4>Assign Engineer</h4>
+            <p>Match skills, location and schedule.</p>
+          </div>
+        </div>
+
+        <div class="workflow-step-item">
+          <div class="step-number-circle">04</div>
+          <div class="step-content">
+            <h4>Complete Task</h4>
+            <p>Engineer completes on-site work.</p>
+          </div>
+        </div>
+
+        <div class="workflow-step-item">
+          <div class="step-number-circle">05</div>
+          <div class="step-content">
+            <h4>Report & Follow Up</h4>
+            <p>Receive evidence, findings and next steps.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who We Support Section -->
+  <section class="support-section" id="support">
+    <div class="section-title-block" style="text-align: left; margin: 0;">
+      <h2 class="section-main-title">Who We Support</h2>
+      <p style="color: var(--text-muted); font-size: 0.92rem; margin-top: 6px;">Built for organisations that deliver IT services.</p>
+    </div>
+
+    <div class="support-grid-4">
+      <div class="support-card">
+        <h4><i class="fa-solid fa-building-shield"></i> Managed Service Providers (MSPs)</h4>
+        <p>Extend your service delivery capability when remote support isn't enough.</p>
+      </div>
+
+      <div class="support-card">
+        <h4><i class="fa-solid fa-server"></i> System Integrators</h4>
+        <p>Support installations, infrastructure changes and delivery projects.</p>
+      </div>
+
+      <div class="support-card">
+        <h4><i class="fa-solid fa-shield-halved"></i> IT Support Companies</h4>
+        <p>Arrange additional field resources for break-fix and client-site visits.</p>
+      </div>
+
+      <div class="support-card">
+        <h4><i class="fa-solid fa-globe"></i> Multi-Site Businesses</h4>
+        <p>Deliver IT tasks across multiple locations with an agreed plan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mid-Page CTA Banner -->
+  <div class="cta-banner-mid">
+    <div class="cta-banner-text">
+      <h3>Need On-Site IT Support?</h3>
+      <p>Tell us what you need and where the work will take place.</p>
+    </div>
+    <div class="cta-banner-actions">
+      <button type="button" class="btn btn-gradient" onclick="openModal('requestModal')">Request a Service Quote</button>
+      <button type="button" class="btn btn-outline-navy" onclick="openModal('joinModal')">Join Our Engineer Network</button>
+    </div>
+  </div>
+
+  <!-- Telemetry / Tracking Section -->
+  <section class="telemetry-section" id="telemetry">
+    <div class="section-title-block">
+      <span class="section-subtitle">OPERATIONS TELEMETRY</span>
+      <h2 class="section-main-title">Track Work Order Status</h2>
     </div>
 
     <div class="telemetry-container">
@@ -353,256 +412,51 @@
     </div>
   </section>
 
-  <section class="services-section" id="services">
-    <div class="section-title-block">
-      <span class="section-subtitle">Technical Capability Pillars</span>
-      <h2 class="section-main-title">Core On-Site IT Field Services</h2>
-    </div>
-
-    <div class="services-grid">
-      <div class="service-card">
-        <div>
-          <div class="service-icon-box"><i class="fa-solid fa-server"></i></div>
-          <h3 class="service-title">Data Center Smart Hands</h3>
-          <p class="service-desc">24/7 physical and technical dispatch across colocation hubs and carrier-neutral data centers.</p>
-        </div>
-        <ul class="service-list">
-          <li><i class="fa-solid fa-check-double"></i> Racking, Stacking & Elevation Changes</li>
-          <li><i class="fa-solid fa-check-double"></i> Serial Console Access & Remote Triage</li>
-          <li><i class="fa-solid fa-check-double"></i> Cisco, Juniper, HP & Dell RMA Swaps</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <div>
-          <div class="service-icon-box"><i class="fa-solid fa-wifi"></i></div>
-          <h3 class="service-title">Wi-Fi & RF Network Surveys</h3>
-          <p class="service-desc">Wireless site surveys utilizing industry-standard Ekahau software for enterprise wireless design.</p>
-        </div>
-        <ul class="service-list">
-          <li><i class="fa-solid fa-check-double"></i> Ekahau Predictive & Active Heatmapping</li>
-          <li><i class="fa-solid fa-check-double"></i> Spectrum Analysis & Signal Audits</li>
-          <li><i class="fa-solid fa-check-double"></i> Access Point Mounting & Validation</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <div>
-          <div class="service-icon-box"><i class="fa-solid fa-network-wired"></i></div>
-          <h3 class="service-title">Patching & Rack Cleanup</h3>
-          <p class="service-desc">Structured cable patching, rack dressing, and trace-and-tag remediation for communications closets.</p>
-        </div>
-        <ul class="service-list">
-          <li><i class="fa-solid fa-check-double"></i> Cat6/Cat6A & Fiber Patching & Dressing</li>
-          <li><i class="fa-solid fa-check-double"></i> Cable Auditing, Tracing & Labeling</li>
-          <li><i class="fa-solid fa-check-double"></i> Fluke Certification & OTDR Fiber Testing</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <div>
-          <div class="service-icon-box"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-          <h3 class="service-title">On-Site Network Diagnostics</h3>
-          <p class="service-desc">Emergency L1-L3 field engineers dispatched to diagnose link outages and hardware faults.</p>
-        </div>
-        <ul class="service-list">
-          <li><i class="fa-solid fa-check-double"></i> Layer 1/2 Outage & Loopback Testing</li>
-          <li><i class="fa-solid fa-check-double"></i> Console Boot Log Capture & Remote Triage</li>
-          <li><i class="fa-solid fa-check-double"></i> Transceiver (SFP/SFP+) & PSU Field Swaps</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <div>
-          <div class="service-icon-box"><i class="fa-solid fa-warehouse"></i></div>
-          <h3 class="service-title">UK Staging & Warehousing</h3>
-          <p class="service-desc">Secure UK storage facility offering hardware staging, pre-configuration, and rapid field dispatch.</p>
-        </div>
-        <ul class="service-list">
-          <li><i class="fa-solid fa-check-double"></i> Asset Tagging & Secure Inventory Audits</li>
-          <li><i class="fa-solid fa-check-double"></i> OS Pre-Imaging & Firmware Flashing</li>
-          <li><i class="fa-solid fa-check-double"></i> Express Same-Day UK & EU Courier Dispatch</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <div>
-          <div class="service-icon-box"><i class="fa-solid fa-shop"></i></div>
-          <h3 class="service-title">Retail Rollouts & Commercial IMAC</h3>
-          <p class="service-desc">Multi-site technology deployments for commercial chains, office relocations, and high-street retail networks.</p>
-        </div>
-        <ul class="service-list">
-          <li><i class="fa-solid fa-check-double"></i> POS Terminals, Scanners & Thermal Printers</li>
-          <li><i class="fa-solid fa-check-double"></i> Commercial CCTV & Access Control Hardware</li>
-          <li><i class="fa-solid fa-check-double"></i> Office IMAC (Installs, Moves, Adds, Changes)</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="network-section" id="partners">
-    <div class="section-title-block">
-      <span class="section-subtitle">Operational Excellence & Mobility</span>
-      <h2 class="section-main-title">Vetted Field Network & Tailored Dispatch Toolkits</h2>
-    </div>
-
-    <div class="network-container">
-      <div class="network-box">
-        <h3 class="network-title">
-          <i class="fa-solid fa-users-gear"></i> 5,000+ Vetted Field Engineers
-        </h3>
-        <p class="network-p">
-          Our global pool consists of background-checked L1, L2, and L3 network, systems, and cabling specialists stationed across 100+ countries.
-        </p>
-        <ul class="service-list">
-          <li><i class="fa-solid fa-check-double"></i> <strong>Dual-Language Capability:</strong> Local native language fluency paired with fluent professional English for clear NOC/SOC communications.</li>
-          <li><i class="fa-solid fa-check-double"></i> <strong>Strict White-Label Compliance:</strong> Unbranded professional attire or client-branded badges under signed non-disclosure agreements (NDAs).</li>
-          <li><i class="fa-solid fa-check-double"></i> <strong>Colocation Site Clearance:</strong> Active clearance and verified ID credentials for Equinix, Digital Realty, NTT, and Interxion hubs worldwide.</li>
-        </ul>
-      </div>
-
-      <div class="network-box">
-        <h3 class="network-title">
-          <i class="fa-solid fa-truck-ramp-box"></i> Standardized Toolkits & Optional Access Gear
-        </h3>
-        <p class="network-p">
-          Engineers arrive on-site with core diagnostic tools, with specialized physical access equipment and transport dispatched based on work order requirements.
-        </p>
-        <ul class="service-list">
-          <li><i class="fa-solid fa-check-double"></i> <strong>Standard Diagnostic Toolkit:</strong> Fluke copper/fiber testers, OTDRs, Ekahau sidekicks, rollover console cables, and precision hand tools.</li>
-          <li><i class="fa-solid fa-check-double"></i> <strong>Height & Access Gear (On Request):</strong> Fiberglass safety ladders, step-stools, and full PPE dispatched when high-ceiling cabling or AP mounting is required.</li>
-          <li><i class="fa-solid fa-check-double"></i> <strong>Personal Vehicles & Cargo Transport (Optional):</strong> Dedicated technician vehicles available on demand for multi-site deployments and heavy hardware transport.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="faq-section" id="faq">
-    <div class="section-title-block">
-      <span class="section-subtitle">Got Questions?</span>
-      <h2 class="section-main-title">Frequently Asked Questions & Escalation SLA</h2>
-    </div>
-
-    <div class="faq-grid">
-      <div class="faq-item">
-        <h3 class="faq-question">
-          <i class="fa-solid fa-circle-question"></i> How fast can you dispatch an engineer for emergency break-fix?
-        </h3>
-        <p class="faq-answer">
-          Our Centralized 24/7 Service Desk acknowledges incoming tickets in <strong>under 30 minutes</strong>. For critical sites in major metropolitan hubs across 100+ countries, emergency on-site arrival SLAs range from <strong>2 to 4 hours</strong>.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h3 class="faq-question">
-          <i class="fa-solid fa-user-shield"></i> Are field dispatches 100% white-labeled for SIs and MSPs?
-        </h3>
-        <p class="faq-answer">
-          Yes. Our engineers operate strictly under signed Non-Disclosure Agreements (NDAs). They arrive at end-user locations in unbranded professional attire or wearing your co-branded digital credentials, representing your brand seamlessly.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h3 class="faq-question">
-          <i class="fa-solid fa-screwdriver-wrench"></i> What tools and access gear do engineers bring on-site?
-        </h3>
-        <p class="faq-answer">
-          Every technician arrives equipped with standard network diagnostics (Fluke copper/fiber testers, console rollover cables, hand tools). Specialized requirements—such as fiberglass safety ladders, step-stools, OTDRs, or personal service vans—are specified and dispatched during work order booking.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h3 class="faq-question">
-          <i class="fa-solid fa-language"></i> Do engineers speak fluent English for remote NOC bridge calls?
-        </h3>
-        <p class="faq-answer">
-          Yes. Every engineer in our 5,000+ global pool possesses dual-language capability: native local language fluency to interface with site host contacts, plus fluent professional English for real-time console bridge calls with your remote NOC/SOC team.
-        </p>
-      </div>
-
-      <div class="escalation-banner">
-        <div>
-          <h3 class="escalation-title">
-            <i class="fa-solid fa-triangle-exclamation"></i> How Are On-Site Escalations Handled?
-          </h3>
-          <p class="escalation-p">
-            In the rare event of on-site technical blockers, failed hardware replacements, or unexpected access delays, Jasper IT Solutions Ltd enforces a rigid, time-bound escalation procedure managed by our 24/7 Duty Operations Directors.
-          </p>
-        </div>
-
-        <ul class="escalation-steps">
-          <li><span>T + 0m</span> Immediate Field Lead Triage & Console Capture</li>
-          <li><span>T + 15m</span> Tier-3 Network Architect Direct Escalation</li>
-          <li><span>T + 30m</span> Duty Operations Director & Client Incident Alert</li>
-          <li><span>SLA Guarantee</span> 99% First-Time Fix & Resolution Assurance</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-col">
-        <div class="brand-container" style="margin-bottom: 15px;">
-          <svg class="logo-svg-brand" viewBox="0 0 340 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:32px;">
-            <path d="M10 10 H24 V34 C24 40 20 44 14 44 H8 V36 H13 C15 36 16.5 34.5 16.5 32.5 V10 Z" fill="#FFFFFF"/>
-            <path d="M28 44 L40 10 H50 L62 44 H51 L49 38 H41 L39 44 H28 Z M43.5 26 H46.5 L45 18 Z" fill="#FFFFFF"/>
-            <path d="M35 44 L45 22 L55 44 L48 44 L45 37 L42 44 Z" fill="#0082FB"/>
-            <path d="M66 36 C66 41 70 44 76 44 C82 44 86 41 86 36 C86 30 78 29 78 25 C78 22.5 80 21.5 83 21.5 C86 21.5 88 23 88 26 H96 C96 19 90 14 83 14 C76 14 70 18 70 24 C70 30 78 31 78 35 C78 37.5 76 38.5 73 38.5 C69.5 38.5 68 36.5 68 33 H66 Z" fill="#FFFFFF"/>
-            <path d="M100 10 H114 C120 10 124 13.5 124 19 C124 24.5 120 28 114 28 H108 V44 H100 V10 Z M108 21 H113 C115.5 21 116.5 20 116.5 19 C116.5 18 115.5 17 113 17 H108 V21 Z" fill="#FFFFFF"/>
-            <path d="M128 10 H146 V17 H136 V21 H144 V27 H136 V37 H146 V44 H128 V10 Z" fill="#FFFFFF"/>
-            <path d="M150 10 H164 C170 10 174 13 174 18.5 C174 22.5 171 25 167 26 L175 44 H165 L158 31 H158 V44 H150 V10 Z M158 21 H163 C165.5 21 166.5 20 166.5 18.5 C166.5 17 165.5 16 163 16 H158 V21 Z" fill="#FFFFFF"/>
-            <text x="35" y="56" font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#94A3B8" letter-spacing="2.5">IT SOLUTIONS LTD.</text>
-          </svg>
-        </div>
-        <p>
-          Global IT Field Services, Smart Hands, and Secure UK Staging Solutions empowering System Integrators and Managed Service Providers across 100+ countries.
-        </p>
+        <div class="footer-logo-text" style="margin-bottom: 15px;">JASPER <span>IT SOLUTIONS</span></div>
+        <p>B2B field services focused on L1 support, technical escalation and coordinated on-site delivery.</p>
         <p style="color: #FFFFFF; font-weight: 600; font-size: 0.82rem;">
           <i class="fa-solid fa-phone" style="color: var(--cyan-accent);"></i> +44 7907 805430 &bull; support@jasperitsol.com
         </p>
       </div>
 
       <div class="footer-col">
-        <h4>Core Services</h4>
+        <h4>Services</h4>
         <ul class="footer-links">
-          <li><a href="#services">Data Center Smart Hands</a></li>
-          <li><a href="#services">Wi-Fi & Ekahau Surveys</a></li>
-          <li><a href="#services">Structured Cabling & Fiber</a></li>
-          <li><a href="#services">On-Site Diagnostics</a></li>
-          <li><a href="#services">UK Staging & Warehousing</a></li>
+          <li><a href="#services">L1 IT Field Support</a></li>
+          <li><a href="#services">L2 IT Field Support</a></li>
+          <li><a href="#services">Smart Hands & Infrastructure</a></li>
+          <li><a href="#services">Rollouts & Multi-Site Projects</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Quick Actions</h4>
+        <h4>Client Resources</h4>
         <ul class="footer-links">
-          <li><a href="#" onclick="openModal('requestModal'); return false;">Log Service Request</a></li>
-          <li><a href="#" onclick="openModal('quoteModal'); return false;">Request a Quote</a></li>
-          <li><a href="#" onclick="openModal('meetingModal'); return false;">Book a Meeting</a></li>
-          <li><a href="#" onclick="openModal('joinModal'); return false;">Join Engineer Network</a></li>
+          <li><a onclick="openModal('requestModal')">Request a Service</a></li>
+          <li><a href="#telemetry">Track a Work Order</a></li>
+          <li><a onclick="openModal('meetingModal')">Contact Us</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Corporate HQ</h4>
-        <p>
-          <strong>Jasper IT Solutions Ltd</strong><br>
-          UK Registered Headquarters<br>
-          Secure Warehousing & Staging Facility<br>
-          <span style="color: var(--green-active);"><i class="fa-solid fa-circle" style="font-size: 7px;"></i> 24/7 Dispatch Operations Active</span>
-        </p>
+        <h4>Engineer Resources</h4>
+        <ul class="footer-links">
+          <li><a onclick="openModal('joinModal')">Join Our Engineer Network</a></li>
+        </ul>
       </div>
     </div>
 
     <div class="footer-bottom">
       <div>&copy; 2026 Jasper IT Solutions Ltd. All rights reserved.</div>
       <div class="footer-legal-links">
-        <button type="button" onclick="openModal('termsModal')">Terms of Service & SLAs</button>
-        <button type="button" onclick="openModal('ndaModal')">White-Label NDA & Conduct</button>
-        <button type="button" onclick="openModal('safetyModal')">Health & Safety Policy</button>
-        <button type="button" onclick="openModal('privacyModal')">Privacy & GDPR</button>
-        <button type="button" onclick="openModal('disputeModal')">Legal Dispute Resolution</button>
+        <button type="button" onclick="openModal('privacyModal')">Privacy Notice</button>
+        <button type="button" onclick="openModal('termsModal')">Website Terms</button>
+        <button type="button" onclick="openModal('safetyModal')">Cookie Notice</button>
+        <button type="button" onclick="openModal('disputeModal')">Service Terms & SLA</button>
       </div>
     </div>
   </footer>
@@ -626,11 +480,11 @@
     </div>
   </div>
 
-  <!-- 2. Log Service Request Modal -->
+  <!-- 2. Request Service / Quote Modal -->
   <div class="modal-overlay" id="requestModal">
     <div class="modal-card" id="requestModalCard">
       <button type="button" class="modal-close" onclick="closeModal('requestModal')"><i class="fa-solid fa-xmark"></i></button>
-      <h3 class="modal-title"><i class="fa-solid fa-bolt" style="color: var(--cyan-accent);"></i> Log Service Request</h3>
+      <h3 class="modal-title"><i class="fa-solid fa-bolt" style="color: var(--cyan-accent);"></i> Request a Service Quote</h3>
       <form onsubmit="submitFormWithFile(event, 'requestModal', 'ServiceRequest', 'SR')">
         <div class="form-group"><label>Name</label><input type="text" class="form-control" name="name" required></div>
         <div class="form-group"><label>Email</label><input type="email" class="form-control" name="email" required></div>
@@ -671,22 +525,7 @@
     </div>
   </div>
 
-  <!-- 3. Request a Quote Modal -->
-  <div class="modal-overlay" id="quoteModal">
-    <div class="modal-card" id="quoteModalCard">
-      <button type="button" class="modal-close" onclick="closeModal('quoteModal')"><i class="fa-solid fa-xmark"></i></button>
-      <h3 class="modal-title"><i class="fa-solid fa-file-invoice-dollar" style="color: var(--cyan-accent);"></i> Request an Enterprise Quote</h3>
-      <form onsubmit="submitFormWithFile(event, 'quoteModal', 'QuoteRequest', 'QT')">
-        <div class="form-group"><label>Name</label><input type="text" class="form-control" name="company" required></div>
-        <div class="form-group"><label>Email</label><input type="email" class="form-control" name="email" required></div>
-        <div class="form-group"><label>Contact</label><input type="tel" class="form-control" name="phone" required></div>
-        <div class="form-group"><label>Project Scope / Multi-Site Details</label><textarea class="form-control" name="scope" rows="3" required></textarea></div>
-        <button type="submit" class="btn btn-gradient" style="width: 100%; justify-content: center; padding: 12px; margin-top: 10px;">Request Quote</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- 4. Book a Meeting Modal -->
+  <!-- 3. Book a Meeting Modal -->
   <div class="modal-overlay" id="meetingModal">
     <div class="modal-card" id="meetingModalCard">
       <button type="button" class="modal-close" onclick="closeModal('meetingModal')"><i class="fa-solid fa-xmark"></i></button>
@@ -733,42 +572,55 @@
   </div>
 
   <!-- Legal Modals -->
-  <div class="modal-overlay" id="termsModal"><div class="modal-card"><button class="modal-close" onclick="closeModal('termsModal')"><i class="fa-solid fa-xmark"></i></button><h3 class="modal-title">Terms of Service & SLAs</h3><p>Jasper IT Solutions Ltd operates under strict international SLA guarantees. All field dispatches, work orders, and smart hands services are governed by professional service standards across 100+ countries.</p></div></div>
-  <div class="modal-overlay" id="ndaModal"><div class="modal-card"><button class="modal-close" onclick="closeModal('ndaModal')"><i class="fa-solid fa-xmark"></i></button><h3 class="modal-title">White-Label NDA & Conduct</h3><p>All field personnel operate under strict Non-Disclosure Agreements. Engineers arrive in unbranded professional attire or co-branded attire representing your enterprise seamlessly.</p></div></div>
-  <div class="modal-overlay" id="safetyModal"><div class="modal-card"><button class="modal-close" onclick="closeModal('safetyModal')"><i class="fa-solid fa-xmark"></i></button><h3 class="modal-title">Health & Safety Policy</h3><p>Comprehensive PPE compliance, adherence to data center safety protocols, and certified electrical/cabling safety standards worldwide.</p></div></div>
-  <div class="modal-overlay" id="privacyModal"><div class="modal-card"><button class="modal-close" onclick="closeModal('privacyModal')"><i class="fa-solid fa-xmark"></i></button><h3 class="modal-title">Privacy & GDPR Compliance</h3><p>We respect client data privacy in compliance with UK GDPR and global data protection regulations. Telemetry and lead details are securely stored and encrypted.</p></div></div>
-  <div class="modal-overlay" id="disputeModal"><div class="modal-card"><button class="modal-close" onclick="closeModal('disputeModal')"><i class="fa-solid fa-xmark"></i></button><h3 class="modal-title">Legal Dispute Resolution</h3><p>All commercial agreements and service dispatches are governed by and construed in accordance with the laws of England and Wales.</p></div></div>
+  <div class="modal-overlay" id="privacyModal"><div class="modal-card"><button class="modal-close" onclick="closeModal('privacyModal')"><i class="fa-solid fa-xmark"></i></button><h3 class="modal-title">Privacy Notice</h3><p>We respect client data privacy in compliance with UK GDPR and global data protection regulations.</p></div></div>
+  <div class="modal-overlay" id="termsModal"><div class="modal-card"><button class="modal-close" onclick="closeModal('termsModal')"><i class="fa-solid fa-xmark"></i></button><h3 class="modal-title">Website Terms</h3><p>All use of this website is subject to Jasper IT Solutions Ltd standard terms and conditions.</p></div></div>
+  <div class="modal-overlay" id="safetyModal"><div class="modal-card"><button class="modal-close" onclick="closeModal('safetyModal')"><i class="fa-solid fa-xmark"></i></button><h3 class="modal-title">Cookie Notice</h3><p>We use essential cookies to ensure proper website operation and security.</p></div></div>
+  <div class="modal-overlay" id="disputeModal"><div class="modal-card"><button class="modal-close" onclick="closeModal('disputeModal')"><i class="fa-solid fa-xmark"></i></button><h3 class="modal-title">Service Terms & SLA</h3><p>All field dispatches and service agreements are governed under the laws of England and Wales.</p></div></div>
 
   <script>
-    const SCRIPT_URL = "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzzIBjNcw10b3jxHEVy04XuJppU5uBsHs-cE71QdjuyrObjVk1Yo_Sf0YROtYAu1ITlEQ/exec";
 
-    function openModal(id) { document.getElementById(id).style.display = 'flex'; document.body.style.overflow = 'hidden'; }
-    function closeModal(id) { document.getElementById(id).style.display = 'none'; document.body.style.overflow = 'auto'; }
+    function openModal(id) { 
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.style.display = 'flex'; 
+        document.body.style.overflow = 'hidden'; 
+      }
+    }
+
+    function closeModal(id) { 
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.style.display = 'none'; 
+        document.body.style.overflow = 'auto'; 
+      }
+    }
 
     function generateRefCode(prefix) {
       const num = Math.floor(1000 + Math.random() * 9000);
       return `${prefix}-${num}`;
     }
 
-    function showConfirmationBox(modalCardId, refCode) {
+    function showConfirmationBox(modalCardId, refCode, pinCode) {
       const card = document.getElementById(modalCardId);
+      if (!card) return;
       card.innerHTML = `
         <button type="button" class="modal-close" onclick="location.reload()"><i class="fa-solid fa-xmark"></i></button>
         <div style="text-align: center; padding: 20px 0;">
           <i class="fa-solid fa-circle-check" style="font-size: 3.5rem; color: var(--green-active);"></i>
           <h3 style="font-family: 'Exo 2', sans-serif; font-size: 1.6rem; color: var(--navy-primary); margin-top: 15px;">Submission Received!</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Your request has been logged and forwarded to Sarmad.</p>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 6px;">Your request has been logged successfully.</p>
           
           <div class="ref-confirm-box">
             <span style="font-size: 0.78rem; text-transform: uppercase; font-weight: 700; color: var(--navy-primary); letter-spacing: 1px;">Your Reference Code</span>
-            <div class="ref-number-text" id="activeRefCode">${refCode}</div>
-            <button type="button" class="btn btn-outline-navy" style="padding: 6px 14px; font-size: 0.8rem;" onclick="copyRefCode('${refCode}')">
+            <div class="ref-number-text">${refCode}</div>
+            ${pinCode ? `<p style="font-size: 0.85rem; color: var(--navy-primary); margin-top:5px;">Secure PIN: <strong>${pinCode}</strong> (Save this to track your ticket)</p>` : ''}
+            <button type="button" class="btn btn-outline-navy" style="padding: 6px 14px; font-size: 0.8rem; margin-top: 10px;" onclick="copyRefCode('${refCode}')">
               <i class="fa-solid fa-copy"></i> Copy Reference Code
             </button>
           </div>
 
-          <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 20px;">Please retain this code for reference.</p>
-          <button type="button" class="btn btn-gradient" style="margin-top: 15px;" onclick="location.reload()">Done</button>
+          <button type="button" class="btn btn-gradient" style="margin-top: 15px; width: 100%; justify-content:center;" onclick="location.reload()">Done</button>
         </div>
       `;
     }
@@ -790,20 +642,37 @@
       };
 
       formData.forEach((val, key) => {
-        if (val instanceof File && val.name) {
-          payload[key + "FileName"] = val.name;
-        } else {
+        if (!(val instanceof File)) {
           payload[key] = val;
         }
       });
 
+      const fileInput = form.querySelector('input[type="file"]');
+      if (fileInput && fileInput.files && fileInput.files[0]) {
+        const file = fileInput.files[0];
+        payload.fileName = file.name;
+        payload.fileMimeType = file.type;
+
+        const reader = new FileReader();
+        reader.onload = async function(e) {
+          payload.fileData = e.target.result;
+          await sendPayload(payload, modalId, refCode);
+        };
+        reader.readAsDataURL(file);
+      } else {
+        await sendPayload(payload, modalId, refCode);
+      }
+    }
+
+    async function sendPayload(payload, modalId, refCode) {
       try {
-        await fetch(SCRIPT_URL, {
+        const response = await fetch(SCRIPT_URL, {
           method: 'POST',
           headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify(payload)
         });
-        showConfirmationBox(`${modalId}Card`, refCode);
+        const result = await response.json();
+        showConfirmationBox(`${modalId}Card`, refCode, result.pinCode);
       } catch(err) {
         showConfirmationBox(`${modalId}Card`, refCode);
       }
@@ -821,7 +690,7 @@
     }
 
     window.onclick = function(event) {
-      ['joinModal', 'requestModal', 'quoteModal', 'meetingModal', 'termsModal', 'ndaModal', 'safetyModal', 'privacyModal', 'disputeModal'].forEach(id => {
+      ['joinModal', 'requestModal', 'meetingModal', 'privacyModal', 'termsModal', 'safetyModal', 'disputeModal'].forEach(id => {
         let modal = document.getElementById(id);
         if (event.target === modal) { modal.style.display = 'none'; document.body.style.overflow = 'auto'; }
       });
@@ -853,12 +722,13 @@
                 <span class="status-badge status-active">${t.activityStatus}</span>
               </div>
               <div style="margin-top: 12px; line-height: 1.8; font-size: 0.9rem;">
+                <p><strong>Client Name:</strong> ${t.clientName}</p>
                 <p><strong>Location:</strong> ${t.location}</p>
                 <p><strong>Scope:</strong> ${t.scope}</p>
                 <p><strong>Engineer:</strong> ${t.engineer}</p>
                 <p><strong>Check-In:</strong> ${t.checkIn}</p>
                 <p><strong>Check-Out:</strong> ${t.checkOut}</p>
-                ${t.reportLink ? `<p style="margin-top:10px;"><a href="${t.reportLink}" target="_blank" class="btn btn-gradient" style="padding:6px 12px; font-size:0.8rem;"><i class="fa-solid fa-download"></i> Download Deliverables</a></p>` : ''}
+                ${t.reportLink && t.reportLink !== '-' ? `<p style="margin-top:10px;"><a href="${t.reportLink}" target="_blank" class="btn btn-gradient" style="padding:6px 12px; font-size:0.8rem;"><i class="fa-solid fa-download"></i> Download Attachment</a></p>` : ''}
               </div>
             </div>`;
         } else {
